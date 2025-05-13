@@ -1,0 +1,41 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Tallere>
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/views/workshops/workshops.css" asp-append-version="true" />
+}
+
+<div class="hero-section">
+    <h1 class="hero-title">¡Bienvenidos al Centro Cultural Regional Tlahuelilpan!</h1>
+    <p class="hero-text">Espacio dedicado al arte, la educación y la cultura.</p>
+</div>
+
+<div class="info-section">
+    <h2 class="info-title">Instalaciones</h2>
+    <p>Contamos con salones para danza, música, artes plásticas y artes escénicas, además de un área destinada a biblioteca y lectura informal.</p>
+    <p>También poseemos un área de exposiciones con iluminación especial y elevador para personas con discapacidad.</p>
+
+    <h2 class="info-title">Actividades</h2>
+    <div class="workshops-container">
+        <div class="workshops-header">
+            <h1 class="workshops-title">Nuestros Talleres</h1>
+        </div>
+
+        @await Html.PartialAsync("~/Views/Workshops/_workshops.cshtml", Model)
+    </div>
+
+    <div class="contact-info">
+        <h2 class="info-title">Ubicación y Contacto</h2>
+        <p><strong>Fecha de Fundación:</strong> 21 de agosto de 2018</p>
+        <p><strong>Dirección:</strong> Av. Universidad s/n, Centro, C.P. 42780, Tlahuelilpan, Hgo.</p>
+        <p><strong>Teléfonos:</strong> (763) 786 00 10 / Celular: (771) 228 8424</p>
+    </div>
+</div>
+
+
+@section Scripts {
+    @* <script src="~/js/home-index.js" asp-append-version="true"></script> *@
+}

@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Centro_Cultural_Regional_Tlahuelilpan
+build_property.RootNamespace = Centro_Cultural_Regional_Tlahuelilpan
+build_property.ProjectDir = C:\Users\edwin\Documents\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\edwin\Documents\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Groups/CreateEditGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXENyZWF0ZUVkaXRHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Groups/DeleteGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXERlbGV0ZUdyb3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Groups/Groups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXEdyb3Vwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Students/Students.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcU3R1ZGVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Teachers/CreateEditTeacherUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcQ3JlYXRlRWRpdFRlYWNoZXJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Teachers/DeleteTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcRGVsZXRlVGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Teachers/Teachers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcVGVhY2hlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Workshops/CreateEditWorkshop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya3Nob3BzXENyZWF0ZUVkaXRXb3Jrc2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Workshops/DeleteWorkshop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya3Nob3BzXERlbGV0ZVdvcmtzaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Workshops/Workshops.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya3Nob3BzXFdvcmtzaG9wcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Workshops/_workshops.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya3Nob3BzXF93b3Jrc2hvcHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edwin/Documents/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-evre9uaohz

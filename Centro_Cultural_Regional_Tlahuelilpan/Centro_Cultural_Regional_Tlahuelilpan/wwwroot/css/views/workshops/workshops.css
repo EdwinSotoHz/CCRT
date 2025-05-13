@@ -1,0 +1,286 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #536DFE;
+    --danger-color: #e74c3c;
+    --success-color: #2ecc71;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --text-muted: #7f8c8d;
+    --border-color: #e0e0e0;
+}
+
+.workshops-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.workshops-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.workshops-title {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.btn-add-workshop {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+    .btn-add-workshop:hover {
+        background-color: #3a56e8;
+    }
+
+.workshops-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.workshop-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .workshop-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.workshop-image {
+    width: 40%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+    .workshop-image img {
+        max-width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+    }
+
+.workshop-info {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.workshop-id {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.workshop-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+}
+
+.btn-edit {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+    .btn-edit:hover {
+        background-color: #3a56e8;
+    }
+
+.btn-delete {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+    .btn-delete:hover {
+        background-color: #c0392b;
+    }
+
+.workshop-name {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.workshop-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.workshop-details {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+
+.detail-value {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .workshops-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workshop-card {
+        flex-direction: column;
+    }
+
+    .workshop-image, .workshop-info {
+        width: 100%;
+    }
+
+    .workshop-image {
+        height: 200px;
+    }
+
+    .workshops-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+.btn-add-teacher {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+    .btn-add-teacher:hover {
+        background-color: #3a56e8;
+    }
+/* Estilo punteado para el botón de agregar */
+.btn-add-teacher {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--accent-color);
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
+
+    .btn-add-teacher::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px dashed var(--accent-color);
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-add-teacher:hover::before {
+        border-color: #3a56e8;
+        animation: pulseBorder 1.5s infinite;
+    }
+
+    .btn-add-teacher:hover {
+        color: #3a56e8;
+        background-color: rgba(83, 109, 254, 0.05);
+    }
+
+@keyframes pulseBorder {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-add-teacher i {
+    transition: transform 0.3s ease;
+}
+
+.btn-add-teacher:hover i {
+    transform: rotate(90deg);
+}

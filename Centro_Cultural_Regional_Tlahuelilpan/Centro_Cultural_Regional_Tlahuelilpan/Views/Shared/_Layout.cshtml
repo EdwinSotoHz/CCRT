@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CCRT</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Centro_Cultural_Regional_Tlahuelilpan.styles.css" asp-append-version="true" />
+    
+    @*Renderizado de los otros styles no usados*@
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Centro Cultural Regional Tlahuelilpan</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"
+                       asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["Action"].ToString() == "Dashboard" ? "active" : "")"
+                       asp-area="" asp-controller="Home" asp-action="Dashboard">Administración</a>
+                </li>
+                <!-- Ejemplo de otra sección -->
+                @* <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Teachers" ? "active" : "")"
+                       asp-area="" asp-controller="Teachers" asp-action="Index">Docentes</a>
+                </li> *@
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div>
+            &copy; 2025 - Centro Cultural Regional Tlahuelilpan -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+        </div>
+    </footer>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

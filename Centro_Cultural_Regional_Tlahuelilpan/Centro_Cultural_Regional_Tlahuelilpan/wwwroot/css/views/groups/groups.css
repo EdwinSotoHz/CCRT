@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #536DFE;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --text-muted: #7f8c8d;
+    --year-bg: #ae34ef;
+}
+
+.groups-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.groups-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.groups-title {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.btn-add-group {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+    .btn-add-group:hover {
+        background-color: #3a56d5;
+        color: white;
+    }
+
+.groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.group-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+    .group-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.group-year {
+    background-color: var(--year-bg);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.group-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background-color: #3498db;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.group-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), #8a2be2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.group-info {
+    text-align: center;
+}
+
+.group-name {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.group-details {
+    text-align: left;
+}
+
+.detail {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.detail-value {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .groups-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn-add-teacher {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+    .btn-add-teacher:hover {
+        background-color: #3a56e8;
+    }
+/* Estilo punteado para el botón de agregar */
+.btn-add-teacher {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--accent-color);
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
+
+    .btn-add-teacher::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px dashed var(--accent-color);
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-add-teacher:hover::before {
+        border-color: #3a56e8;
+        animation: pulseBorder 1.5s infinite;
+    }
+
+    .btn-add-teacher:hover {
+        color: #3a56e8;
+        background-color: rgba(83, 109, 254, 0.05);
+    }
+
+@keyframes pulseBorder {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-add-teacher i {
+    transition: transform 0.3s ease;
+}
+
+.btn-add-teacher:hover i {
+    transform: rotate(90deg);
+}

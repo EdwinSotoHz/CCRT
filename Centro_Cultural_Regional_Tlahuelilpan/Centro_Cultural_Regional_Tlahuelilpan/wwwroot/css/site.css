@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/******************************* PARA TESTS ***********************************/
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #536DFE;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --btn-view-bg: #e0f2fe;
+    --btn-view-hover: #bae6fd;
+    --btn-view-color: #0369a1;
+    --btn-add-bg: #dcfce7;
+    --btn-add-hover: #bbf7d0;
+    --btn-add-color: #15803d;
+    --navbar-bg: #ffffff;
+    --footer-bg: #ecf0f1;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--navbar-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: var(--accent-color);
+    }
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--accent-color);
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--accent-color);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+main {
+    padding: 40px;
+    margin: auto 30px !important;
+    min-height: 90vh !important;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    
+    position: static !important;
+    bottom: auto !important;
+}
+
+    footer a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }

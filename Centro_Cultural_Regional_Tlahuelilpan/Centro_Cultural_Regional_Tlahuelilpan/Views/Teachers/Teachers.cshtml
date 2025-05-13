@@ -1,0 +1,85 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Usuario>
+
+@{
+    ViewData["Title"] = "Profesores";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/teachers/teachers.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}
+
+<div class="teachers-container">
+    <div class="teachers-header">
+        <h1 class="teachers-title">Perfiles de Profesores</h1>
+        <a class="btn-add-teacher" asp-action="CreateEditTeacherUser" asp-controller="Teachers" asp-route-UsuarioId="0">
+            <i class="fas fa-plus"></i> Agregar Profesor
+        </a>
+    </div>
+
+    <div class="teachers-grid">
+        @foreach (var item in Model)
+        {
+            <div class="teacher-card">
+                <div class="teacher-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+
+                <div class="teacher-info">
+                    <div class="teacher-meta">
+                        <span class="teacher-id">@item.UsuarioId</span>
+                        <div class="teacher-actions">
+                            <a class="btn-edit" asp-action="CreateEditTeacherUser" asp-controller="Teachers" asp-route-UsuarioId="@item.UsuarioId">
+                                <i class="fas fa-edit"></i> Editar
+                            </a>
+                            <a class="btn-delete" asp-action="DeleteTeacher" asp-controller="Teachers" asp-route-UsuarioId="@item.UsuarioId">
+                                <i class="fas fa-trash"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="teacher-name">@item.NombreUsuario</h3>
+
+                    <div class="teacher-details">
+                        <div class="detail">
+                            <span class="detail-label">Nombre:</span>
+                            <span class="detail-value">@item.Docente.Nombre @item.Docente.ApellidoPaterno @item.Docente.ApellidoMaterno</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Localidad:</span>
+                            <span class="detail-value">@item.Docente.Localidad</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Teléfono:</span>
+                            <span class="detail-value">
+                                <a href="https://wa.me/@item.Docente.NumeroContacto" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> @item.Docente.NumeroContacto
+                                </a>
+                            </span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">
+                                <a href="mailto:@item.Docente.Email" target="_blank">
+                                    <i class="fas fa-envelope"></i> @item.Docente.Email
+                                </a>
+                            </span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Rol:</span>
+                            <span class="detail-value">@item.Rol.Nombre</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Contraseña:</span>
+                            <span class="detail-value hashing-value">@item.Contraseña</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+
+}

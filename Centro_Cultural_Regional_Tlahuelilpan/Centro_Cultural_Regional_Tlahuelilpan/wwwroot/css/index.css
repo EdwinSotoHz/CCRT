@@ -1,0 +1,54 @@
+.hero-section {
+    background: linear-gradient(to bottom, #e0f2fe, #f5f7fa);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.info-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.info-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+
+.info-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .info-list li {
+        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+.contact-info {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+    .contact-info p {
+        margin: 0.4rem 0;
+        font-size: 1rem;
+    }

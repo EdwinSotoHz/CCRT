@@ -1,0 +1,92 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.TeachersUsersVM
+@{
+    ViewData["Title"] = Model.objUsuario.UsuarioId == 0 ? "Agregar Profesor" : "Editar Profesor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/teachers/teachers-create-edit.css" asp-append-version="true" />
+}
+
+<div class="form-container">
+    <h1>@(Model.objUsuario.UsuarioId == 0 ? "Agregar Profesor" : "Editar Profesor")</h1>
+
+    <form asp-action="Confirm_CreateEditTeacherUser" method="post">
+        <input type="hidden" asp-for="objUsuario.UsuarioId" />
+        <input type="hidden" asp-for="objDocente.DocenteId" />
+
+        <div class="form-section">
+            <h2>Información del Docente</h2>
+            
+            <div class="form-group">
+                <label asp-for="objDocente.Nombre">Nombre</label>
+                <input asp-for="objDocente.Nombre" class="form-input" required />
+                <span asp-validation-for="objDocente.Nombre" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objDocente.ApellidoPaterno">Apellido Paterno</label>
+                <input asp-for="objDocente.ApellidoPaterno" class="form-input" required />
+                <span asp-validation-for="objDocente.ApellidoPaterno" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objDocente.ApellidoMaterno">Apellido Materno</label>
+                <input asp-for="objDocente.ApellidoMaterno" class="form-input" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objDocente.Localidad">Localidad</label>
+                <input asp-for="objDocente.Localidad" class="form-input" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objDocente.NumeroContacto">Número de Contacto</label>
+                <input asp-for="objDocente.NumeroContacto" class="form-input" required />
+                <span asp-validation-for="objDocente.NumeroContacto" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objDocente.Email">Email</label>
+                <input asp-for="objDocente.Email" type="email" class="form-input" />
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Información de Usuario</h2>
+            
+            <div class="form-group">
+                <label asp-for="objUsuario.NombreUsuario">Nombre de Usuario</label>
+                <input asp-for="objUsuario.NombreUsuario" class="form-input" required />
+                <span asp-validation-for="objUsuario.NombreUsuario" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objUsuario.Contraseña">Contraseña</label>
+                <input asp-for="objUsuario.Contraseña" type="password" class="form-input" required/>
+                <span asp-validation-for="objUsuario.Contraseña" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ConfirmarClave">Confirmar Contraseña</label>
+                <input asp-for="ConfirmarClave" type="password" class="form-input" required />
+                <span asp-validation-for="ConfirmarClave" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="objUsuario.RolId">Rol</label>
+                <select asp-for="objUsuario.RolId" asp-items="Model.lstRoles" class="form-input" required>
+                    <option value="">-- Seleccionar Rol --</option>
+                </select>
+                <span asp-validation-for="objUsuario.RolId" class="validation-error"></span>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                @(Model.objUsuario.UsuarioId == 0 ? "Crear" : "Actualizar")
+            </button>
+            <a asp-action="Teachers" class="btn btn-secondary">Volver</a>
+        </div>
+    </form>
+</div>

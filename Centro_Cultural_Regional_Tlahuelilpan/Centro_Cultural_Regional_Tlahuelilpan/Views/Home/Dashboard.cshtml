@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Administración";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}
+
+<div class="dashboard-container">
+    <h1 class="dashboard-title">Dashboard de Gestión Educativa</h1>
+
+    <div class="cards-grid">
+        <!-- Card 1: Talleres -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Talleres</h2>
+                <div class="card-icon">
+                    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+                    <animated-icons src="https://animatedicons.co/get-icon?name=Violin&style=minimalistic&token=9c840f28-8274-4ee6-b5b3-7707bde20ce4"
+                                    trigger="hover"
+                                    attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+                                    height="120"
+                                    width="120"></animated-icons>
+                </div>
+            </div>
+            <div class="card-value">12</div>
+            <p class="card-description">Total de talleres disponibles en el sistema</p>
+            <div class="card-actions">
+                <a asp-action="Workshops" asp-controller="Workshops">
+                    <button class="action-btn view-btn">Ver todos los talleres</button>
+                </a>
+                <a asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="0">
+                    <button class="action-btn add-btn">Agregar Taller</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2: Docentes -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Docentes</h2>
+                <div class="card-icon">
+                    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+                    <animated-icons src="https://animatedicons.co/get-icon?name=Old%20Man&style=minimalistic&token=d766d1d6-7f63-40b7-81a8-4b28910eec76"
+                                    trigger="hover"
+                                    attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+                                    height="120"
+                                    width="120"></animated-icons>
+                </div>
+            </div>
+            <div class="card-value">18</div>
+            <p class="card-description">Docentes activos en el sistema educativo</p>
+            <div class="card-actions">
+                <a asp-action="Teachers" asp-controller="Teachers">
+                    <button class="action-btn view-btn">Ver lista de Profesores</button>
+                </a>
+                <a asp-action="CreateEditTeacherUser" asp-controller="Teachers" asp-route-UsuarioId="0">
+                    <button class="action-btn add-btn">Agregar Profesor</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3: Grupos -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Grupos</h2>
+                <div class="card-icon">
+                    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+                    <animated-icons src="https://animatedicons.co/get-icon?name=Team&style=minimalistic&token=9c840f28-8274-4ee6-b5b3-7707bde20ce4"
+                                    trigger="hover"
+                                    attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+                                    height="120"
+                                    width="120"></animated-icons>
+                </div>
+            </div>
+            <div class="card-value">18</div>
+            <p class="card-description">Grupos activos en el sistema educativo</p>
+            <div class="card-actions">
+                <a asp-action="Groups" asp-controller="Groups">
+                    <button class="action-btn view-btn">Ver todos los grupos</button>
+                </a>
+                <a asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="0">
+                    <button class="action-btn add-btn">Agregar Grupo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 4: Alumnos -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Alumnos</h2>
+                <div class="card-icon">
+                    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+                    <animated-icons src="https://animatedicons.co/get-icon?name=Academic%20Background&style=minimalistic&token=fcb0569d-9cc8-4c8a-bbfa-cf46744e4770"
+                                    trigger="hover"
+                                    attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+                                    height="120"
+                                    width="120"></animated-icons>
+                </div>
+            </div>
+            <div class="card-value">245</div>
+            <p class="card-description">Estudiantes registrados en el sistema</p>
+            <div class="card-actions">
+                <a asp-action="Students" asp-controller="Students">
+                    <button class="action-btn view-btn">Ver todos los estudiantes</button>
+                </a>
+                <a asp-action="CreateEditStudents" asp-controller="Students" asp-route-AlumnoId="0">
+                    <button class="action-btn add-btn">Inscribir Alumno</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @* <script src="~/js/home-index.js" asp-append-version="true"></script> *@
+}

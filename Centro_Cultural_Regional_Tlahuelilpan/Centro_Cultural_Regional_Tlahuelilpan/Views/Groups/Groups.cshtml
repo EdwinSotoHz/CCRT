@@ -1,0 +1,63 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Grupo>
+@{
+    ViewData["Title"] = "Grupos";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/groups/groups.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}
+
+<div class="groups-container">
+    <div class="groups-header">
+        <h1 class="groups-title">Listado de Grupos</h1>
+        <a class="btn-add-teacher" asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="0">
+            <i class="fas fa-plus"></i> Agregar Grupo
+        </a>
+    </div>
+
+    <div class="groups-grid">
+        @foreach (var grupo in Model)
+        {
+            <div class="group-card">
+                <div class="group-header">
+                    <span class="group-year">@grupo.FechaInicio?.Year</span>
+                    <div class="group-actions">
+                        <a asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId" class="btn-edit">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a asp-action="DeleteGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId" class="btn-delete">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group-icon">
+                    @grupo.NombreGrupo.Substring(0, 2).ToUpper()
+                </div>
+
+                <div class="group-info">
+                    <h3 class="group-name">@grupo.NombreGrupo</h3>
+                    <div class="group-details">
+                        <div class="detail">
+                            <span class="detail-label">Taller:</span>
+                            <span class="detail-value">@grupo.Taller.NombreTaller</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Docente:</span>
+                            <span class="detail-value">@grupo.Docente.Nombre @grupo.Docente.ApellidoPaterno</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Horario:</span>
+                            <span class="detail-value">@grupo.Horario</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Aula:</span>
+                            <span class="detail-value">@grupo.Aula</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

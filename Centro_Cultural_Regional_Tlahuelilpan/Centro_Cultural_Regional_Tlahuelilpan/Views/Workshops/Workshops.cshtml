@@ -1,0 +1,60 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Tallere>
+
+@{
+    ViewData["Title"] = "Talleres";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/workshops/workshops.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}
+
+<div class="workshops-container">
+    <div class="workshops-header">
+        <h1 class="workshops-title">Nuestros Talleres</h1>
+
+        <a class="btn-add-teacher" asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="0">
+            <i class="fas fa-plus"></i> Agregar Taller
+        </a>
+    </div>
+
+    <div class="workshops-grid">
+        <!-- Taller 1 -->
+        @foreach (var item in Model)
+        {
+            <div class="workshop-card">
+                <div class="workshop-image">
+                    <img src="~/src/img/@item.UrlImagen" alt="@item.UrlImagen">
+                </div>
+                <div class="workshop-info">
+                    <div class="workshop-meta">
+                        <span class="workshop-id">@item.TallerId</span>
+                        <div class="workshop-actions">
+                            <a class="btn-edit" asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"> Editar</a>
+                            <a class="btn-delete" asp-action="DeleteWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"> Eliminar</a>
+                        </div>
+                    </div>
+                    <h3 class="workshop-name">@item.NombreTaller</h3>
+                    <p class="workshop-description">
+                        @item.Descripcion
+                    </p>
+                    <div class="workshop-details">
+                        <div class="detail">
+                            <span class="detail-label">Precio:</span>
+                            <span class="detail-value">$@item.Precio</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Duración:</span>
+                            <span class="detail-value">@item.Duracion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+@section Scripts {
+    @* <script src="~/js/home-index.js" asp-append-version="true"></script> *@
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Centro_Cultural_Regional_Tlahuelilpan.props" />
+</Project>

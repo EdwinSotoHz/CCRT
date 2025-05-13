@@ -1,0 +1,76 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.GrupoVM
+@{
+    ViewData["Title"] = Model.objGrupo.GrupoId == 0 ? "Agregar Grupo" : "Editar Grupo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/groups/groups-create-edit.css" asp-append-version="true" />
+}
+
+<div class="form-container">
+    <h1>@(Model.objGrupo.GrupoId == 0 ? "Agregar Grupo" : "Editar Grupo")</h1>
+
+    <form asp-action="Confirm_CreateEditGroup" method="post">
+        <input type="hidden" asp-for="objGrupo.GrupoId" />
+
+        <div class="form-group">
+            <label asp-for="objGrupo.NombreGrupo">Nombre del Grupo</label>
+            <input asp-for="objGrupo.NombreGrupo" class="form-input" required />
+            <span asp-validation-for="objGrupo.NombreGrupo" class="validation-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.TallerId">Taller</label>
+            <select asp-for="objGrupo.TallerId" asp-items="Model.lstTalleres" class="form-input" required>
+                <option value="">-- Seleccionar Taller --</option>
+            </select>
+            <span asp-validation-for="objGrupo.TallerId" class="validation-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.DocenteId">Docente</label>
+            <select asp-for="objGrupo.DocenteId" asp-items="Model.lstDocentes" class="form-input" required>
+                <option value="">-- Seleccionar Docente --</option>
+            </select>
+            <span asp-validation-for="objGrupo.DocenteId" class="validation-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.Horario">Horario</label>
+            <input asp-for="objGrupo.Horario" class="form-input" required />
+            <span asp-validation-for="objGrupo.Horario" class="validation-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.Aula">Aula</label>
+            <input asp-for="objGrupo.Aula" class="form-input" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.FechaInicio">Fecha de Inicio</label>
+            <input asp-for="objGrupo.FechaInicio" type="date" class="form-input" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.FechaFin">Fecha de Fin</label>
+            <input asp-for="objGrupo.FechaFin" type="date" class="form-input" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="objGrupo.Estado">Estado</label>
+            <select asp-for="objGrupo.Estado" class="form-input">
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+                <option value="Completado">Completado</option>
+            </select>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                @(Model.objGrupo.GrupoId == 0 ? "Crear" : "Actualizar")
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Grupo
+@{
+    ViewData["Title"] = "Eliminar Grupo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/groups/groups-delete.css" asp-append-version="true" />
+}
+
+<div class="form-container">
+    <h1 class="danger-title">¿Eliminar Grupo?</h1>
+
+    <form asp-action="Confirm_DeleteGroup" method="post">
+        <input type="hidden" asp-for="GrupoId" />
+
+        <div class="form-group">
+            <label>Nombre del Grupo</label>
+            <input asp-for="NombreGrupo" class="form-input" disabled />
+        </div>
+
+        <div class="form-group">
+            <label>Taller</label>
+            <input value="@Model.Taller.NombreTaller" class="form-input" disabled />
+        </div>
+
+        <div class="form-group">
+            <label>Docente</label>
+            <input value="@Model.Docente.Nombre @Model.Docente.ApellidoPaterno" class="form-input" disabled />
+        </div>
+
+        <div class="form-group">
+            <label>Horario</label>
+            <input asp-for="Horario" class="form-input" disabled />
+        </div>
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
