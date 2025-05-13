@@ -18,7 +18,7 @@
 }
 
 .workshops-header {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
@@ -111,33 +111,43 @@
     gap: 8px;
 }
 
+/* Botones unificados */
 .btn-edit, .btn-delete {
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
-    transition: all 0.3s;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-edit {
-    background-color: var(--accent-color);
+    background-color: #7527f1; /* Azul */
     color: white;
 }
 
     .btn-edit:hover {
-        background-color: #3a56e8;
+        background-color: #3367D6;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
 .btn-delete {
-    background-color: var(--danger-color);
+    background-color: #EA4335; /* Rojo */
     color: white;
 }
 
     .btn-delete:hover {
-        background-color: #c0392b;
+        background-color: #D33426;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
 .workshop-name {
@@ -201,26 +211,6 @@
     }
 }
 
-
-.btn-add-teacher {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-    .btn-add-teacher:hover {
-        background-color: #3a56e8;
-    }
-/* Estilo punteado para el botón de agregar */
 .btn-add-teacher {
     position: relative;
     padding: 10px 20px;

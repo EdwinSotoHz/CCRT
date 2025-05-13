@@ -49,17 +49,17 @@
 
         <div class="form-group">
             <label asp-for="objGrupo.FechaInicio">Fecha de Inicio</label>
-            <input asp-for="objGrupo.FechaInicio" type="date" class="form-input" />
+            <input asp-for="objGrupo.FechaInicio" type="date" class="form-input" required />
         </div>
 
         <div class="form-group">
             <label asp-for="objGrupo.FechaFin">Fecha de Fin</label>
-            <input asp-for="objGrupo.FechaFin" type="date" class="form-input" />
+            <input asp-for="objGrupo.FechaFin" type="date" class="form-input" required />
         </div>
 
         <div class="form-group">
             <label asp-for="objGrupo.Estado">Estado</label>
-            <select asp-for="objGrupo.Estado" class="form-input">
+            <select asp-for="objGrupo.Estado" class="form-input" required>
                 <option value="Activo">Activo</option>
                 <option value="Inactivo">Inactivo</option>
                 <option value="Completado">Completado</option>

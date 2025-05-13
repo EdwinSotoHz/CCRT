@@ -27,12 +27,15 @@
                     <img src="~/src/img/@item.UrlImagen" alt="@item.UrlImagen">
                 </div>
                 <div class="workshop-info">
-                    <div class="workshop-meta">
-                        <span class="workshop-id">@item.TallerId</span>
-                        <div class="workshop-actions">
-                            <a class="btn-edit" asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"> Editar</a>
-                            <a class="btn-delete" asp-action="DeleteWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"> Eliminar</a>
-                        </div>
+                    <div class="workshop-actions">
+                        <a asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"
+                           class="action-btn btn-edit">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a asp-action="DeleteWorkshop" asp-controller="Workshops" asp-route-TallerId="@item.TallerId"
+                           class="action-btn btn-delete">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </a>
                     </div>
                     <h3 class="workshop-name">@item.NombreTaller</h3>
                     <p class="workshop-description">

@@ -111,33 +111,43 @@
     gap: 8px;
 }
 
+/* Botones unificados */
 .btn-edit, .btn-delete {
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
-    transition: all 0.3s;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-edit {
-    background-color: var(--accent-color);
+    background-color: #7527f1; /* Azul */
     color: white;
 }
 
     .btn-edit:hover {
-        background-color: #3a56e8;
+        background-color: #3367D6;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
 .btn-delete {
-    background-color: var(--danger-color);
+    background-color: #EA4335; /* Rojo */
     color: white;
 }
 
     .btn-delete:hover {
-        background-color: #c0392b;
+        background-color: #D33426;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
 .teacher-name {
@@ -230,37 +240,39 @@
     overflow: hidden;
 }
 
-.btn-add-teacher::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px dashed var(--accent-color);
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
+    .btn-add-teacher::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px dashed var(--accent-color);
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
 
-.btn-add-teacher:hover::before {
-    border-color: #3a56e8;
-    animation: pulseBorder 1.5s infinite;
-}
+    .btn-add-teacher:hover::before {
+        border-color: #3a56e8;
+        animation: pulseBorder 1.5s infinite;
+    }
 
-.btn-add-teacher:hover {
-    color: #3a56e8;
-    background-color: rgba(83, 109, 254, 0.05);
-}
+    .btn-add-teacher:hover {
+        color: #3a56e8;
+        background-color: rgba(83, 109, 254, 0.05);
+    }
 
 @keyframes pulseBorder {
     0% {
         opacity: 1;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.7;
         transform: scale(1.02);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);

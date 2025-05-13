@@ -23,17 +23,19 @@
                 <div class="group-header">
                     <span class="group-year">@grupo.FechaInicio?.Year</span>
                     <div class="group-actions">
-                        <a asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId" class="btn-edit">
-                            <i class="fas fa-edit"></i>
+                        <a asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId"
+                           class="action-btn btn-edit">
+                            <i class="fas fa-edit"></i> Editar
                         </a>
-                        <a asp-action="DeleteGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId" class="btn-delete">
-                            <i class="fas fa-trash"></i>
+                        <a asp-action="DeleteGroup" asp-controller="Groups" asp-route-grupoId="@grupo.GrupoId"
+                           class="action-btn btn-delete">
+                            <i class="fas fa-trash"></i> Eliminar
                         </a>
                     </div>
                 </div>
 
                 <div class="group-icon">
-                    @grupo.NombreGrupo.Substring(0, 2).ToUpper()
+                    @(grupo.NombreGrupo?.Length >= 2 ? grupo.NombreGrupo.Substring(0, 2).ToUpper() : grupo.NombreGrupo?.ToUpper() ?? "NA")
                 </div>
 
                 <div class="group-info">
