@@ -5,7 +5,7 @@
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/views/students/student-form.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/views/students/students-create-edit.css" asp-append-version="true" />
 }
 
 <div class="form-container">
@@ -18,37 +18,68 @@
         <div class="form-section">
             <h2><i class="fas fa-folder-open"></i> Documentación del Expediente</h2>
             <div class="expediente-grid">
+                <!-- Acta de Nacimiento -->
                 <div class="form-check">
-                    <input asp-for="Expediente.ActaNacimiento" class="form-check-input" />
-                    <label asp-for="Expediente.ActaNacimiento" class="form-check-label">Acta de Nacimiento</label>
+                    <input type="checkbox" id="ActaNacimientoCheckbox"
+                    @(Model.Expediente.ActaNacimiento == true ? "checked" : "") />
+                    <label for="ActaNacimientoCheckbox" class="form-check-label">Acta de Nacimiento</label>
+                    <input type="hidden" asp-for="Expediente.ActaNacimiento" id="ActaNacimientoHidden" />
                 </div>
+
+                <!-- CURP -->
                 <div class="form-check">
-                    <input asp-for="Expediente.Curp" class="form-check-input" />
-                    <label asp-for="Expediente.Curp" class="form-check-label">CURP</label>
+                    <input type="checkbox" id="CurpCheckbox"
+                    @(Model.Expediente.Curp == true ? "checked" : "") />
+                    <label for="CurpCheckbox" class="form-check-label">CURP</label>
+                    <input type="hidden" asp-for="Expediente.Curp" id="CurpHidden" />
                 </div>
+
+                <!-- Comprobante Domicilio -->
                 <div class="form-check">
-                    <input asp-for="Expediente.ComprobanteDomicilio" class="form-check-input" />
-                    <label asp-for="Expediente.ComprobanteDomicilio" class="form-check-label">Comprobante Domicilio</label>
+                    <input type="checkbox" id="ComprobanteDomicilioCheckbox"
+                    @(Model.Expediente.ComprobanteDomicilio == true ? "checked" : "") />
+                    <label for="ComprobanteDomicilioCheckbox" class="form-check-label">Comprobante Domicilio</label>
+                    <input type="hidden" asp-for="Expediente.ComprobanteDomicilio" id="ComprobanteDomicilioHidden" />
                 </div>
+
+                <!-- INE -->
                 <div class="form-check">
-                    <input asp-for="Expediente.Ine" class="form-check-input" />
-                    <label asp-for="Expediente.Ine" class="form-check-label">INE</label>
+                    <input type="checkbox" id="IneCheckbox"
+                    @(Model.Expediente.Ine == true ? "checked" : "") />
+                    <label for="IneCheckbox" class="form-check-label">INE</label>
+                    <input type="hidden" asp-for="Expediente.Ine" id="IneHidden" />
                 </div>
+
+                <!-- Certificado Médico -->
                 <div class="form-check">
-                    <input asp-for="Expediente.CertificadoMedico" class="form-check-input" />
-                    <label asp-for="Expediente.CertificadoMedico" class="form-check-label">Certificado Médico</label>
+                    <input type="checkbox" id="CertificadoMedicoCheckbox"
+                    @(Model.Expediente.CertificadoMedico == true ? "checked" : "") />
+                    <label for="CertificadoMedicoCheckbox" class="form-check-label">Certificado Médico</label>
+                    <input type="hidden" asp-for="Expediente.CertificadoMedico" id="CertificadoMedicoHidden" />
                 </div>
+
+                <!-- Recibo de Pago -->
                 <div class="form-check">
-                    <input asp-for="Expediente.ReciboPago" class="form-check-input" />
-                    <label asp-for="Expediente.ReciboPago" class="form-check-label">Recibo de Pago</label>
+                    <input type="checkbox" id="ReciboPagoCheckbox"
+                    @(Model.Expediente.ReciboPago == true ? "checked" : "") />
+                    <label for="ReciboPagoCheckbox" class="form-check-label">Recibo de Pago</label>
+                    <input type="hidden" asp-for="Expediente.ReciboPago" id="ReciboPagoHidden" />
                 </div>
+
+                <!-- Fotografías -->
                 <div class="form-check">
-                    <input asp-for="Expediente.Fotografias" class="form-check-input" />
-                    <label asp-for="Expediente.Fotografias" class="form-check-label">Fotografías</label>
+                    <input type="checkbox" id="FotografiasCheckbox"
+                    @(Model.Expediente.Fotografias == true ? "checked" : "") />
+                    <label for="FotografiasCheckbox" class="form-check-label">Fotografías</label>
+                    <input type="hidden" asp-for="Expediente.Fotografias" id="FotografiasHidden" />
                 </div>
+
+                <!-- Documentos Completos -->
                 <div class="form-check">
-                    <input asp-for="Expediente.DocumentosCompletos" class="form-check-input" />
-                    <label asp-for="Expediente.DocumentosCompletos" class="form-check-label">Documentos Completos</label>
+                    <input type="checkbox" id="DocumentosCompletosCheckbox"
+                    @(Model.Expediente.DocumentosCompletos == true ? "checked" : "") />
+                    <label for="DocumentosCompletosCheckbox" class="form-check-label">Documentos Completos</label>
+                    <input type="hidden" asp-for="Expediente.DocumentosCompletos" id="DocumentosCompletosHidden" />
                 </div>
             </div>
         </div>
@@ -127,6 +158,10 @@
 </div>
 
 @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
     <script>
         $(document).ready(function () {
             $('#tallerSelect').change(function () {
@@ -145,4 +180,37 @@
             });
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function setupCheckbox(checkboxId, hiddenId) {
+                const checkbox = document.getElementById(checkboxId);
+                const hiddenInput = document.getElementById(hiddenId);
+
+                if (!checkbox || !hiddenInput) return;
+
+                // Valor inicial
+                hiddenInput.value = checkbox.checked;
+
+                // Cambiar valor al hacer click
+                checkbox.addEventListener("change", function () {
+                    hiddenInput.value = checkbox.checked;
+                });
+            }
+
+            // Configurar cada checkbox
+            setupCheckbox("ActaNacimientoCheckbox", "ActaNacimientoHidden");
+            setupCheckbox("CurpCheckbox", "CurpHidden");
+            setupCheckbox("ComprobanteDomicilioCheckbox", "ComprobanteDomicilioHidden");
+            setupCheckbox("IneCheckbox", "IneHidden");
+            setupCheckbox("CertificadoMedicoCheckbox", "CertificadoMedicoHidden");
+            setupCheckbox("ReciboPagoCheckbox", "ReciboPagoHidden");
+            setupCheckbox("FotografiasCheckbox", "FotografiasHidden");
+            setupCheckbox("DocumentosCompletosCheckbox", "DocumentosCompletosHidden");
+        });
+    </script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

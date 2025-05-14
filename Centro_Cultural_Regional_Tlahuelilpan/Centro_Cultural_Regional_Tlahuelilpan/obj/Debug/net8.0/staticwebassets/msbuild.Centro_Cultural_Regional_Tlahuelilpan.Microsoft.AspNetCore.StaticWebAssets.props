@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ihkyxgm4p8</Fingerprint>
-      <Integrity>ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk=</Integrity>
+      <Fingerprint>jwderhwx0s</Fingerprint>
+      <Integrity>HaNU9eLiNOW9A+rBPjDabLgxWX7eLPNoHN5cWUvIqas=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students-create-edit.css'))</OriginalItemSpec>
@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g76c9jrj8e</Fingerprint>
-      <Integrity>lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk=</Integrity>
+      <Fingerprint>s14xaepda7</Fingerprint>
+      <Integrity>wKTUDx1/fWUpNan3sPeptUuNKStMq2WJPf6Xfr9Ukj0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students-delete.css'))</OriginalItemSpec>
