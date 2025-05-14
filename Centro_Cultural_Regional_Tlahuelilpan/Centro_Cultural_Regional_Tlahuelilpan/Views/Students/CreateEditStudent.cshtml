@@ -1,0 +1,148 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.StudentVM
+@{
+    ViewData["Title"] = Model.Alumno.AlumnoId == 0 ? "Agregar Alumno" : "Editar Alumno";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/students/student-form.css" asp-append-version="true" />
+}
+
+<div class="form-container">
+    <h1>@(Model.Alumno.AlumnoId == 0 ? "Agregar Alumno" : "Editar Alumno")</h1>
+
+    <form asp-action="Confirm_CreateEditStudent" method="post">
+        <input type="hidden" asp-for="Alumno.AlumnoId" />
+
+        <!-- Documentación -->
+        <div class="form-section">
+            <h2><i class="fas fa-folder-open"></i> Documentación del Expediente</h2>
+            <div class="expediente-grid">
+                <div class="form-check">
+                    <input asp-for="Expediente.ActaNacimiento" class="form-check-input" />
+                    <label asp-for="Expediente.ActaNacimiento" class="form-check-label">Acta de Nacimiento</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.Curp" class="form-check-input" />
+                    <label asp-for="Expediente.Curp" class="form-check-label">CURP</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.ComprobanteDomicilio" class="form-check-input" />
+                    <label asp-for="Expediente.ComprobanteDomicilio" class="form-check-label">Comprobante Domicilio</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.Ine" class="form-check-input" />
+                    <label asp-for="Expediente.Ine" class="form-check-label">INE</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.CertificadoMedico" class="form-check-input" />
+                    <label asp-for="Expediente.CertificadoMedico" class="form-check-label">Certificado Médico</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.ReciboPago" class="form-check-input" />
+                    <label asp-for="Expediente.ReciboPago" class="form-check-label">Recibo de Pago</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.Fotografias" class="form-check-input" />
+                    <label asp-for="Expediente.Fotografias" class="form-check-label">Fotografías</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Expediente.DocumentosCompletos" class="form-check-input" />
+                    <label asp-for="Expediente.DocumentosCompletos" class="form-check-label">Documentos Completos</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datos personales -->
+        <div class="form-section">
+            <h2><i class="fas fa-user-graduate"></i> Datos Personales</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label asp-for="Alumno.Nombre">Nombre(s)</label>
+                    <input asp-for="Alumno.Nombre" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.ApellidoPaterno">Apellido Paterno</label>
+                    <input asp-for="Alumno.ApellidoPaterno" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.ApellidoMaterno">Apellido Materno</label>
+                    <input asp-for="Alumno.ApellidoMaterno" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.FechaNacimiento">Fecha de Nacimiento</label>
+                    <input asp-for="Alumno.FechaNacimiento" type="date" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.Localidad">Localidad</label>
+                    <input asp-for="Alumno.Localidad" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.NumeroTelefono">Teléfono</label>
+                    <input asp-for="Alumno.NumeroTelefono" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.CorreoElectronico">Correo Electrónico</label>
+                    <input asp-for="Alumno.CorreoElectronico" type="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.AdultoResponsable">Adulto Responsable</label>
+                    <input asp-for="Alumno.AdultoResponsable" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Alumno.TelefonoResponsable">Teléfono Responsable</label>
+                    <input asp-for="Alumno.TelefonoResponsable" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo -->
+        <div class="form-section">
+            <h2><i class="fas fa-chalkboard-teacher"></i> Seleccionar Grupo</h2>
+            <div class="form-group">
+                <label asp-for="Progreso.GrupoId">Grupo Disponible</label>
+                <select asp-for="Progreso.GrupoId" asp-items="Model.GruposDisponibles"
+                        class="form-control" id="grupoSelect" required>
+                    <option value="">-- Seleccionar Grupo --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Progreso.Estado">Estado</label>
+                <select asp-for="Progreso.Estado" class="form-control" required>
+                    <option value="Inscrito">Inscrito</option>
+                    <option value="En curso">En curso</option>
+                    <option value="Egresado">Egresado</option>
+                    <option value="Dado de baja">Dado de baja</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                @(Model.Alumno.AlumnoId == 0 ? "Crear Alumno" : "Actualizar Alumno")
+            </button>
+            <a asp-action="Students" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tallerSelect').change(function () {
+                var tallerId = $(this).val();
+                if (tallerId) {
+                    $.getJSON('/Students/GetGruposByTaller', { tallerId: tallerId }, function (data) {
+                        var items = '<option value="">-- Seleccionar Grupo --</option>';
+                        $.each(data, function (i, grupo) {
+                            items += '<option value="' + grupo.value + '">' + grupo.text + '</option>';
+                        });
+                        $('#grupoSelect').html(items);
+                    });
+                } else {
+                    $('#grupoSelect').html('<option value="">-- Seleccionar Grupo --</option>');
+                }
+            });
+        });
+    </script>
+}

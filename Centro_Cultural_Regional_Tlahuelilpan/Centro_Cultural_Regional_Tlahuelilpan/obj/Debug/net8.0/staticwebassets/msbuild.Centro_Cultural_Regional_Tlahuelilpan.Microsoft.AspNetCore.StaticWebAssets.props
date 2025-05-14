@@ -126,6 +126,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\groups\groups-delete.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\student-details.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Centro_Cultural_Regional_Tlahuelilpan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Centro_Cultural_Regional_Tlahuelilpan</BasePath>
+      <RelativePath>css/views/students/student-details.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>11m2rjb1iq</Fingerprint>
+      <Integrity>+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\student-details.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Centro_Cultural_Regional_Tlahuelilpan</SourceId>
@@ -138,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ux6ecjxhxr</Fingerprint>
-      <Integrity>oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ=</Integrity>
+      <Fingerprint>xjcul8r14u</Fingerprint>
+      <Integrity>8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students.css'))</OriginalItemSpec>
@@ -156,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tqdty9esae</Fingerprint>
-      <Integrity>1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg=</Integrity>
+      <Fingerprint>ihkyxgm4p8</Fingerprint>
+      <Integrity>ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students-create-edit.css'))</OriginalItemSpec>
@@ -174,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>j1zx5ef9tr</Fingerprint>
-      <Integrity>WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI=</Integrity>
+      <Fingerprint>g76c9jrj8e</Fingerprint>
+      <Integrity>lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students-delete.css'))</OriginalItemSpec>

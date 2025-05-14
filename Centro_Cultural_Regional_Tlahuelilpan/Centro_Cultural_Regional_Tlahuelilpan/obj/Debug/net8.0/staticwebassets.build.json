@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QWBHx8R0UkBZewZsI8fGXZX0BioV+q60lqAYMyUsuDU=",
+  "Hash": "sgHMv2YowuAVibrsmRjLRik1LzchLkfJtO0FkbvGkzo=",
   "Source": "Centro_Cultural_Regional_Tlahuelilpan",
   "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
   "Mode": "Default",
@@ -185,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\css\\views\\groups\\groups-delete.css"
     },
     {
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\student-details.css",
+      "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
+      "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
+      "RelativePath": "css/views/students/student-details#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "11m2rjb1iq",
+      "Integrity": "+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\views\\students\\student-details.css"
+    },
+    {
       "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students.css",
       "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
       "SourceType": "Discovered",
@@ -199,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ux6ecjxhxr",
-      "Integrity": "oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ=",
+      "Fingerprint": "xjcul8r14u",
+      "Integrity": "8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\views\\students\\students.css"
@@ -220,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tqdty9esae",
-      "Integrity": "1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg=",
+      "Fingerprint": "ihkyxgm4p8",
+      "Integrity": "ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\views\\students\\students-create-edit.css"
@@ -241,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j1zx5ef9tr",
-      "Integrity": "WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI=",
+      "Fingerprint": "g76c9jrj8e",
+      "Integrity": "lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\views\\students\\students-delete.css"
@@ -2376,6 +2397,88 @@
       ]
     },
     {
+      "Route": "css/views/students/student-details.11m2rjb1iq.css",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\student-details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 04:35:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11m2rjb1iq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/views/students/student-details.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI="
+        }
+      ]
+    },
+    {
+      "Route": "css/views/students/student-details.css",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\student-details.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4815"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 04:35:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+wzCqRniS43Oh4KGhfUTKqAX3nKMHmUkMV4IqngJQgI="
+        }
+      ]
+    },
+    {
       "Route": "css/views/students/students.css",
       "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students.css",
       "Selectors": [],
@@ -2386,7 +2489,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4571"
+          "Value": "5157"
         },
         {
           "Name": "Content-Type",
@@ -2394,11 +2497,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ=\""
+          "Value": "\"8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:39:53 GMT"
+          "Value": "Wed, 14 May 2025 06:15:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2408,12 +2511,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ="
+          "Value": "sha256-8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk="
         }
       ]
     },
     {
-      "Route": "css/views/students/students.ux6ecjxhxr.css",
+      "Route": "css/views/students/students.xjcul8r14u.css",
       "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2423,7 +2526,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4571"
+          "Value": "5157"
         },
         {
           "Name": "Content-Type",
@@ -2431,11 +2534,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ=\""
+          "Value": "\"8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:39:53 GMT"
+          "Value": "Wed, 14 May 2025 06:15:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2445,7 +2548,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ux6ecjxhxr"
+          "Value": "xjcul8r14u"
         },
         {
           "Name": "label",
@@ -2453,7 +2556,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oiIIvY4YE85TcnRech4G8qLlF1CkR4EmUnwzlOpPMWQ="
+          "Value": "sha256-8x+KmUFhBq60xokedcztCz46KUk0SbjbmlgCfgFXkRk="
         }
       ]
     },
@@ -2468,7 +2571,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "2640"
         },
         {
           "Name": "Content-Type",
@@ -2476,11 +2579,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg=\""
+          "Value": "\"ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:31:07 GMT"
+          "Value": "Wed, 14 May 2025 05:58:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2490,12 +2593,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg="
+          "Value": "sha256-ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk="
         }
       ]
     },
     {
-      "Route": "css/views/students/students-create-edit.tqdty9esae.css",
+      "Route": "css/views/students/students-create-edit.ihkyxgm4p8.css",
       "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students-create-edit.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2505,7 +2608,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "2640"
         },
         {
           "Name": "Content-Type",
@@ -2513,11 +2616,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg=\""
+          "Value": "\"ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:31:07 GMT"
+          "Value": "Wed, 14 May 2025 05:58:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2527,7 +2630,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tqdty9esae"
+          "Value": "ihkyxgm4p8"
         },
         {
           "Name": "label",
@@ -2535,7 +2638,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg="
+          "Value": "sha256-ygISwhdtaQCb0oE0/ic2axllT7Fn5DYSGUa9/3NKQSk="
         }
       ]
     },
@@ -2550,7 +2653,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2529"
+          "Value": "1491"
         },
         {
           "Name": "Content-Type",
@@ -2558,11 +2661,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI=\""
+          "Value": "\"lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:31:17 GMT"
+          "Value": "Wed, 14 May 2025 05:58:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2572,12 +2675,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI="
+          "Value": "sha256-lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk="
         }
       ]
     },
     {
-      "Route": "css/views/students/students-delete.j1zx5ef9tr.css",
+      "Route": "css/views/students/students-delete.g76c9jrj8e.css",
       "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students-delete.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2587,7 +2690,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2529"
+          "Value": "1491"
         },
         {
           "Name": "Content-Type",
@@ -2595,11 +2698,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI=\""
+          "Value": "\"lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:31:17 GMT"
+          "Value": "Wed, 14 May 2025 05:58:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2609,7 +2712,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j1zx5ef9tr"
+          "Value": "g76c9jrj8e"
         },
         {
           "Name": "label",
@@ -2617,7 +2720,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI="
+          "Value": "sha256-lBBR29ekrze79hmc1sdQ13ZFRu/kalaztjn9MAu5FXk="
         }
       ]
     },
@@ -8220,7 +8323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 02:42:25 GMT"
+          "Value": "Wed, 14 May 2025 01:52:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8257,7 +8360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 02:42:25 GMT"
+          "Value": "Wed, 14 May 2025 01:52:39 GMT"
         },
         {
           "Name": "Cache-Control",

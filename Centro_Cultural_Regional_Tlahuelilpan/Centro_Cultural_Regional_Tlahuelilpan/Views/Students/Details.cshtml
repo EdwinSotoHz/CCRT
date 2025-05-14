@@ -1,0 +1,160 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.StudentDetailsVM
+@{
+    ViewData["Title"] = "Detalles del Alumno";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/students/student-details.css" asp-append-version="true" />
+}
+
+<div class="student-details-container">
+    <div class="student-header">
+        <h1>Detalles del Alumno</h1>
+        <a asp-action="Students" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Volver a la lista
+        </a>
+    </div>
+
+    <div class="student-card">
+        <div class="student-avatar-large">
+            @Model.Alumno.Nombre.Substring(0, 1)@Model.Alumno.ApellidoPaterno.Substring(0, 1)
+        </div>
+
+        <div class="student-info-section">
+            <h2><i class="fas fa-user-graduate"></i> Información Personal</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">ID:</span>
+                    <span class="info-value">@Model.Alumno.AlumnoId</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Nombre completo:</span>
+                    <span class="info-value">@Model.Alumno.Nombre @Model.Alumno.ApellidoPaterno @Model.Alumno.ApellidoMaterno</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Fecha de nacimiento:</span>
+                    <span class="info-value">@Model.Alumno.FechaNacimiento?.ToString("dd/MM/yyyy")</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Edad:</span>
+                    <span class="info-value">@Model.Alumno.Edad años</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Localidad:</span>
+                    <span class="info-value">@Model.Alumno.Localidad</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Teléfono:</span>
+                    <span class="info-value">@Model.Alumno.NumeroTelefono</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Correo electrónico:</span>
+                    <span class="info-value">@(Model.Alumno.CorreoElectronico ?? "N/A")</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Adulto responsable:</span>
+                    <span class="info-value">@Model.Alumno.AdultoResponsable</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Tel. responsable:</span>
+                    <span class="info-value">@Model.Alumno.TelefonoResponsable</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="student-info-section">
+            <h2><i class="fas fa-folder-open"></i> Expediente</h2>
+            <div class="expediente-grid">
+                <div class="expediente-item">
+                    <span class="expediente-label">Acta de nacimiento:</span>
+                    <span class="@(Model.Expediente?.ActaNacimiento == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.ActaNacimiento == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">CURP:</span>
+                    <span class="@(Model.Expediente?.Curp == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.Curp == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">Comprobante domicilio:</span>
+                    <span class="@(Model.Expediente?.ComprobanteDomicilio == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.ComprobanteDomicilio == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">INE:</span>
+                    <span class="@(Model.Expediente?.Ine == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.Ine == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">Certificado médico:</span>
+                    <span class="@(Model.Expediente?.CertificadoMedico == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.CertificadoMedico == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">Recibo de pago:</span>
+                    <span class="@(Model.Expediente?.ReciboPago == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.ReciboPago == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">Fotografías:</span>
+                    <span class="@(Model.Expediente?.Fotografias == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.Fotografias == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
+                    <span class="expediente-label">Documentos completos:</span>
+                    <span class="@(Model.Expediente?.DocumentosCompletos == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.DocumentosCompletos == true ? "Sí" : "No")
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="student-info-section">
+            <h2><i class="fas fa-chart-line"></i> Progreso Estudiantil</h2>
+            @if (Model.Progresos.Any())
+            {
+                <div class="progreso-container">
+                    @foreach (var progreso in Model.Progresos)
+                    {
+                        <div class="progreso-card">
+                            <div class="progreso-header">
+                                <h3>@progreso.Grupo.NombreGrupo</h3>
+                                <span class="status-badge @progreso.Estado.ToLower()">@progreso.Estado</span>
+                            </div>
+                            <div class="progreso-details">
+                                <div class="progreso-item">
+                                    <span class="progreso-label">Taller:</span>
+                                    <span class="progreso-value">@progreso.Grupo.Taller.NombreTaller</span>
+                                </div>
+                                <div class="progreso-item">
+                                    <span class="progreso-label">Docente:</span>
+                                    <span class="progreso-value">@progreso.Grupo.Docente.Nombre @progreso.Grupo.Docente.ApellidoPaterno</span>
+                                </div>
+                                <div class="progreso-item">
+                                    <span class="progreso-label">Calificación:</span>
+                                    <span class="progreso-value">@(progreso.Calificacion?.ToString("0.00") ?? "N/A")</span>
+                                </div>
+                                <div class="progreso-item">
+                                    <span class="progreso-label">Asistencia:</span>
+                                    <span class="progreso-value">@(progreso.Asistencia?.ToString("0.00") ?? "N/A")%</span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="no-progreso">El alumno no tiene registros de progreso estudiantil.</p>
+            }
+        </div>
+    </div>
+</div>

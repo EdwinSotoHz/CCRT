@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Centro_Cultural_Regional_Tlahuelilpan.Models;
+using Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels;
 using Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,7 +27,28 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
 
         public IActionResult Dashboard()
         {
-            return View();
+            var vm = new DashboardVM
+            {
+                TotalTalleres = _DBContext.Talleres.Count(),
+                TotalDocentes = _DBContext.Docentes.Count(),
+                TotalGrupos = _DBContext.Grupos.Count(),
+                TotalAlumnos = _DBContext.Alumnos.Count()
+            };
+
+            return View(vm);
+        }
+
+        public IActionResult TeachersAccess()
+        {
+            var vm = new DashboardVM
+            {
+                TotalTalleres = _DBContext.Talleres.Count(),
+                TotalDocentes = _DBContext.Docentes.Count(),
+                TotalGrupos = _DBContext.Grupos.Count(),
+                TotalAlumnos = _DBContext.Alumnos.Count()
+            };
+
+            return View(vm);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

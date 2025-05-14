@@ -4,6 +4,7 @@ wwwroot\css\views\dashboard.css
 wwwroot\css\views\groups\groups.css
 wwwroot\css\views\groups\groups-create-edit.css
 wwwroot\css\views\groups\groups-delete.css
+wwwroot\css\views\students\student-details.css
 wwwroot\css\views\students\students.css
 wwwroot\css\views\students\students-create-edit.css
 wwwroot\css\views\students\students-delete.css

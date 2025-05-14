@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.DashboardVM
+@{
     ViewData["Title"] = "Administración";
 }
 
@@ -24,7 +25,7 @@
                                     width="120"></animated-icons>
                 </div>
             </div>
-            <div class="card-value">12</div>
+            <div class="card-value">@Model.TotalTalleres</div>
             <p class="card-description">Total de talleres disponibles en el sistema</p>
             <div class="card-actions">
                 <a asp-action="Workshops" asp-controller="Workshops">
@@ -49,7 +50,7 @@
                                     width="120"></animated-icons>
                 </div>
             </div>
-            <div class="card-value">18</div>
+            <div class="card-value">@Model.TotalDocentes</div>
             <p class="card-description">Docentes activos en el sistema educativo</p>
             <div class="card-actions">
                 <a asp-action="Teachers" asp-controller="Teachers">
@@ -74,7 +75,7 @@
                                     width="120"></animated-icons>
                 </div>
             </div>
-            <div class="card-value">18</div>
+            <div class="card-value">@Model.TotalGrupos</div>
             <p class="card-description">Grupos activos en el sistema educativo</p>
             <div class="card-actions">
                 <a asp-action="Groups" asp-controller="Groups">
@@ -99,7 +100,7 @@
                                     width="120"></animated-icons>
                 </div>
             </div>
-            <div class="card-value">245</div>
+            <div class="card-value">@Model.TotalAlumnos</div>
             <p class="card-description">Estudiantes registrados en el sistema</p>
             <div class="card-actions">
                 <a asp-action="Students" asp-controller="Students">
@@ -112,7 +113,6 @@
         </div>
     </div>
 </div>
-
 
 @section Scripts {
     @* <script src="~/js/home-index.js" asp-append-version="true"></script> *@
