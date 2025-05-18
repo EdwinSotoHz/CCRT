@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE;
 using Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Diagnostics; // 👈 Añade esta línea arriba del archivo
 
 namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
 {
@@ -16,17 +15,11 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
             _DBContext = context;
         }
 
-        // Vista principal (ya la tenemos)
+        // Vista principal - Lista de todos los alumnos
         public IActionResult Students()
         {
-            var gruposConAlumnos = _DBContext.Grupos
-                .Include(g => g.Taller)
-                .Include(g => g.Docente)
-                .Include(g => g.ProgresoEstudiantils)
-                    .ThenInclude(p => p.Alumno)
-                .ToList();
-
-            return View(gruposConAlumnos);
+            var alumnos = _DBContext.Alumnos.Include(a => a.Expediente).ToList();
+            return View(alumnos);
         }
 
         [HttpGet]
@@ -58,143 +51,109 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
             return View(studentDetails);
         }
 
+        // Vista Crear / Editar Alumno + Expediente
         [HttpGet]
         public IActionResult CreateEditStudent(int id = 0)
         {
-            var vm = new StudentVM
+            var vm = new FileStudentVM
             {
                 Alumno = new Alumno(),
-                Expediente = new Expediente(),
-                Progreso = new ProgresoEstudiantil { Estado = "Inscrito" },
-                GruposDisponibles = _DBContext.Grupos
-                    .Where(g => g.Estado == "En curso")
-                    .Select(g => new SelectListItem
-                    {
-                        Value = g.GrupoId.ToString(),
-                        Text = $"{g.NombreGrupo} - {g.Taller.NombreTaller} ({g.Horario})"
-                    }).ToList()
+                Expediente = new Expediente()
             };
 
             if (id != 0)
             {
                 vm.Alumno = _DBContext.Alumnos.Find(id);
+                vm.Expediente = _DBContext.Expedientes.FirstOrDefault(e => e.AlumnoId == id) ?? new Expediente();
 
-                vm.Expediente = _DBContext.Expedientes
-                    .FirstOrDefault(e => e.AlumnoId == id);
-
-                vm.Progreso = _DBContext.ProgresoEstudiantils
-                    .Include(p => p.Grupo) // <-- Aquí se incluye el Grupo
-                    .FirstOrDefault(p => p.AlumnoId == id);
-
-                if (vm.Progreso != null && vm.Progreso.GrupoId > 0)
-                {
-                    int tallerId = vm.Progreso.Grupo.TallerId; // Ya no da error
-
-                    vm.GruposDisponibles = _DBContext.Grupos
-                        .Where(g => g.TallerId == tallerId && g.Estado == "En curso")
-                        .Select(g => new SelectListItem
-                        {
-                            Value = g.GrupoId.ToString(),
-                            Text = $"{g.NombreGrupo} - {g.Taller.NombreTaller} ({g.Horario})"
-                        }).ToList();
-                }
+                // Cargar valores actuales del expediente
+                vm.ActaNacimiento = vm.Expediente.ActaNacimiento ?? false;
+                vm.Curp = vm.Expediente.Curp ?? false;
+                vm.ComprobanteDomicilio = vm.Expediente.ComprobanteDomicilio ?? false;
+                vm.Ine = vm.Expediente.Ine ?? false;
+                vm.CertificadoMedico = vm.Expediente.CertificadoMedico ?? false;
+                vm.ReciboPago = vm.Expediente.ReciboPago ?? false;
+                vm.Fotografias = vm.Expediente.Fotografias ?? false;
+                vm.DocumentosCompletos = vm.Expediente.DocumentosCompletos ?? false;
             }
 
             return View(vm);
         }
 
-        [HttpGet]
-        public JsonResult GetGruposByTaller(int tallerId)
-        {
-            var grupos = _DBContext.Grupos
-                .Where(g => g.TallerId == tallerId && g.Estado == "En curso")
-                .Select(g => new SelectListItem
-                {
-                    Value = g.GrupoId.ToString(),
-                    Text = $"{g.NombreGrupo} ({g.Horario})"
-                }).ToList();
-
-            return Json(grupos);
-        }
-
+        // Acción POST para guardar
         [HttpPost]
-        public IActionResult Confirm_CreateEditStudent(StudentVM vm)
+        public IActionResult Confirm_CreateEditStudent(FileStudentVM vm)
         {
-            try
+            if (vm.Alumno.AlumnoId == 0)
             {
-                if (vm.Alumno.AlumnoId == 0)
+                // 👤 Crear nuevo alumno
+                _DBContext.Alumnos.Add(vm.Alumno);
+                _DBContext.SaveChanges();
+
+                // 📄 Asignar expediente con ID del nuevo alumno
+                var expediente = new Expediente
                 {
-                    // 👤 Crear nuevo alumno
-                    _DBContext.Alumnos.Add(vm.Alumno);
-                    _DBContext.SaveChanges();
+                    AlumnoId = vm.Alumno.AlumnoId,
+                    ActaNacimiento = vm.ActaNacimiento,
+                    Curp = vm.Curp,
+                    ComprobanteDomicilio = vm.ComprobanteDomicilio,
+                    Ine = vm.Ine,
+                    CertificadoMedico = vm.CertificadoMedico,
+                    ReciboPago = vm.ReciboPago,
+                    Fotografias = vm.Fotografias,
+                    DocumentosCompletos = vm.DocumentosCompletos
+                };
 
-                    // 📄 Asignar expediente
-                    vm.Expediente.AlumnoId = vm.Alumno.AlumnoId;
-                    _DBContext.Expedientes.Add(vm.Expediente);
+                _DBContext.Expedientes.Add(expediente);
+            }
+            else
+            {
+                // 📝 Actualizar alumno
+                _DBContext.Alumnos.Update(vm.Alumno);
 
-                    // 📚 Registrar progreso
-                    if (vm.Progreso.GrupoId > 0)
-                    {
-                        vm.Progreso.AlumnoId = vm.Alumno.AlumnoId;
-                        _DBContext.ProgresoEstudiantils.Add(vm.Progreso);
-                    }
+                // 📁 Obtener expediente existente o crear uno si no existe
+                var existingExpediente = _DBContext.Expedientes
+                    .FirstOrDefault(e => e.AlumnoId == vm.Alumno.AlumnoId);
+
+                if (existingExpediente != null)
+                {
+                    // Actualizar campos
+                    existingExpediente.ActaNacimiento = vm.ActaNacimiento;
+                    existingExpediente.Curp = vm.Curp;
+                    existingExpediente.ComprobanteDomicilio = vm.ComprobanteDomicilio;
+                    existingExpediente.Ine = vm.Ine;
+                    existingExpediente.CertificadoMedico = vm.CertificadoMedico;
+                    existingExpediente.ReciboPago = vm.ReciboPago;
+                    existingExpediente.Fotografias = vm.Fotografias;
+                    existingExpediente.DocumentosCompletos = vm.DocumentosCompletos;
+
+                    _DBContext.Expedientes.Update(existingExpediente);
                 }
                 else
                 {
-                    // 📝 Actualizar alumno
-                    _DBContext.Alumnos.Update(vm.Alumno);
-
-                    // 📁 Actualizar o crear expediente
-                    var existingExpediente = _DBContext.Expedientes.FirstOrDefault(e => e.AlumnoId == vm.Alumno.AlumnoId);
-                    if (existingExpediente != null)
+                    // Si no tiene expediente aún, créalo
+                    var newExpediente = new Expediente
                     {
-                        existingExpediente.ActaNacimiento = vm.Expediente.ActaNacimiento;
-                        existingExpediente.Curp = vm.Expediente.Curp;
-                        existingExpediente.ComprobanteDomicilio = vm.Expediente.ComprobanteDomicilio;
-                        existingExpediente.Ine = vm.Expediente.Ine;
-                        existingExpediente.CertificadoMedico = vm.Expediente.CertificadoMedico;
-                        existingExpediente.ReciboPago = vm.Expediente.ReciboPago;
-                        existingExpediente.Fotografias = vm.Expediente.Fotografias;
-                        existingExpediente.DocumentosCompletos = vm.Expediente.DocumentosCompletos;
-
-                        _DBContext.Expedientes.Update(existingExpediente);
-                    }
-                    else
-                    {
-                        vm.Expediente.AlumnoId = vm.Alumno.AlumnoId;
-                        _DBContext.Expedientes.Add(vm.Expediente);
-                    }
-
-                    // 📚 Actualizar progreso
-                    var existingProgreso = _DBContext.ProgresoEstudiantils
-                        .FirstOrDefault(p => p.AlumnoId == vm.Alumno.AlumnoId);
-
-                    if (existingProgreso != null)
-                    {
-                        existingProgreso.GrupoId = vm.Progreso.GrupoId;
-                        existingProgreso.Estado = vm.Progreso.Estado;
-                        _DBContext.ProgresoEstudiantils.Update(existingProgreso);
-                    }
-                    else if (vm.Progreso.GrupoId > 0)
-                    {
-                        vm.Progreso.AlumnoId = vm.Alumno.AlumnoId;
-                        _DBContext.ProgresoEstudiantils.Add(vm.Progreso);
-                    }
+                        AlumnoId = vm.Alumno.AlumnoId,
+                        ActaNacimiento = vm.ActaNacimiento,
+                        Curp = vm.Curp,
+                        ComprobanteDomicilio = vm.ComprobanteDomicilio,
+                        Ine = vm.Ine,
+                        CertificadoMedico = vm.CertificadoMedico,
+                        ReciboPago = vm.ReciboPago,
+                        Fotografias = vm.Fotografias,
+                        DocumentosCompletos = vm.DocumentosCompletos
+                    };
+                    _DBContext.Expedientes.Add(newExpediente);
                 }
-
-                _DBContext.SaveChanges();
-                TempData["SuccessMessage"] = "✅ Alumno guardado exitosamente.";
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"❌ Excepción: {ex.Message}\n{ex.StackTrace}");
-                TempData["ErrorMessage"] = $"❌ Ocurrió un error: {ex.Message}";
-                return View("CreateEditStudent", vm);
             }
 
+            _DBContext.SaveChanges();
+            TempData["SuccessMessage"] = "✅ Alumno guardado exitosamente.";
             return RedirectToAction("Students");
         }
 
+        // Eliminar alumno (sin cambios)
         [HttpGet]
         public IActionResult DeleteStudent(int id)
         {
@@ -224,20 +183,88 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
                 return NotFound();
             }
 
-            // Eliminar progresos primero
             _DBContext.ProgresoEstudiantils.RemoveRange(alumno.ProgresoEstudiantils);
-
-            // Eliminar expediente
             if (alumno.Expediente != null)
             {
                 _DBContext.Expedientes.Remove(alumno.Expediente);
             }
 
-            // Finalmente eliminar alumno
             _DBContext.Alumnos.Remove(alumno);
             _DBContext.SaveChanges();
 
             return RedirectToAction("Students");
+        }
+
+        [HttpGet]
+        public IActionResult AddToGroup(int id)
+        {
+            var alumno = _DBContext.Alumnos.Find(id);
+            if (alumno == null)
+            {
+                return NotFound();
+            }
+
+            var vm = new StudentGroupVM
+            {
+                AlumnoId = alumno.AlumnoId,
+                NombreAlumno = $"{alumno.Nombre} {alumno.ApellidoPaterno} {alumno.ApellidoMaterno}"
+            };
+
+            // Cargar solo los grupos "En curso"
+            vm.GruposDisponibles = _DBContext.Grupos
+                .Where(g => g.Estado == "En curso")
+                .Select(g => new SelectListItem
+                {
+                    Value = g.GrupoId.ToString(),
+                    Text = $"{g.NombreGrupo} - {g.Taller.NombreTaller} ({g.Horario})"
+                }).ToList();
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        public IActionResult Confirm_AddToGroup(StudentGroupVM vm)
+        {
+            if (!ModelState.IsValid)
+            {
+                // Recargar grupos si hay error
+                vm.GruposDisponibles = _DBContext.Grupos
+                    .Where(g => g.Estado == "En curso")
+                    .Select(g => new SelectListItem
+                    {
+                        Value = g.GrupoId.ToString(),
+                        Text = $"{g.NombreGrupo} - {g.Taller.NombreTaller} ({g.Horario})"
+                    }).ToList();
+
+                return View("AddToGroup", vm);
+            }
+
+            // Verificar si ya está inscrito en ese grupo
+            bool existeProgreso = _DBContext.ProgresoEstudiantils
+                .Any(p => p.AlumnoId == vm.AlumnoId && p.GrupoId == vm.GrupoId);
+
+            if (existeProgreso)
+            {
+                TempData["ErrorMessage"] = "⚠️ El alumno ya está inscrito en este grupo.";
+                return RedirectToAction("AddToGroup", new { id = vm.AlumnoId });
+            }
+
+            // Crear nuevo progreso estudiantil
+            var progreso = new ProgresoEstudiantil
+            {
+                AlumnoId = vm.AlumnoId,
+                GrupoId = vm.GrupoId,
+                Estado = "Inscrito",
+                Calificacion = null,
+                Asistencia = null
+            };
+
+            _DBContext.ProgresoEstudiantils.Add(progreso);
+            _DBContext.SaveChanges();
+
+            TempData["SuccessMessage"] = "✅ Alumno inscrito exitosamente en el grupo.";
+
+            return RedirectToAction("Details", new { id = vm.AlumnoId });
         }
     }
 }

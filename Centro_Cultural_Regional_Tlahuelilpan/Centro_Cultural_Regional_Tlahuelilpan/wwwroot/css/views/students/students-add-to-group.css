@@ -1,7 +1,8 @@
-﻿:root {
+:root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
     --accent-color: #536DFE;
+    --danger-color: #e74c3c;
     --bg-color: #f5f7fa;
     --card-bg: #ffffff;
     --text-color: #2c3e50;
@@ -28,19 +29,20 @@ body {
         margin-bottom: 20px;
     }
 
+.info-card {
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent-color);
+}
+
 .form-section h2 {
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 5px;
-}
-
-.expediente-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
 }
 
 .form-group {
@@ -65,40 +67,6 @@ body {
     font-size: 1rem;
     box-sizing: border-box;
 }
-
-.form-check {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-    .form-check input[type="checkbox"] {
-        appearance: none;
-        -webkit-appearance: none;
-        width: 20px;
-        height: 20px;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: white;
-        cursor: pointer;
-        position: relative;
-    }
-
-        .form-check input[type="checkbox"]:checked {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-        }
-
-            .form-check input[type="checkbox"]:checked::after {
-                content: " ";
-                font-size: 14px;
-                color: white;
-                position: absolute;
-                top: 1px;
-                left: 3px;
-            }
 
 .form-actions {
     display: flex;
@@ -135,7 +103,7 @@ body {
 }
 
     .btn-secondary:hover {
-        background-color: #7f8c8d; /* Tonos grises más oscuros al hover */
+        background-color: #7f8c8d; /* Tonos grises m�s oscuros al hover */
     }
 
 .text-danger {

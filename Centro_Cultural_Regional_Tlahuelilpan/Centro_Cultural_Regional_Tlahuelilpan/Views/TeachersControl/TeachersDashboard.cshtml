@@ -1,0 +1,89 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Grupo>
+@{
+    ViewData["Title"] = "Alumnos por Grupo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/teachersControl/students.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}
+
+<div class="students-container">
+    <div class="students-header">
+        <h1 class="students-title">Alumnos por Grupo</h1>
+        <a class="btn-add" asp-action="CreateEditStudent" asp-controller="Students">
+            <i class="fas fa-plus"></i> Agregar Alumno
+        </a>
+    </div>
+
+    @foreach (var grupo in Model)
+    {
+        <div class="group-section">
+            <div class="group-header">
+                <h2 class="group-title">
+                    <span class="group-icon">@grupo.NombreGrupo.Substring(0, 2).ToUpper()</span>
+                    @grupo.NombreGrupo - @grupo.Taller.NombreTaller
+                </h2>
+                <div class="group-meta">
+                    <span class="meta-item"><i class="fas fa-user-tie"></i> @grupo.Docente.Nombre @grupo.Docente.ApellidoPaterno</span>
+                    <span class="meta-item"><i class="fas fa-clock"></i> @grupo.Horario</span>
+                    <span class="meta-item"><i class="fas fa-map-marker-alt"></i> @grupo.Aula</span>
+                </div>
+            </div>
+
+            @if (grupo.ProgresoEstudiantils.Any())
+            {
+                <div class="students-table-container">
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Teléfono</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var progreso in grupo.ProgresoEstudiantils)
+                            {
+                                var alumno = progreso.Alumno;
+                                <tr>
+                                    <td>@alumno.AlumnoId</td>
+                                    <td>@alumno.Nombre @alumno.ApellidoPaterno @alumno.ApellidoMaterno</td>
+                                    <td>@alumno.Edad</td>
+                                    <td>@alumno.NumeroTelefono</td>
+                                    <td>
+                                        <span class="status-badge @progreso.Estado.ToLower()">@progreso.Estado</span>
+                                    </td>
+                                    <td class="actions-cell">
+                                        <a asp-action="CreateEditStudent" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
+                                           class="btn-action btn-edit">
+                                            <i class="fas fa-edit"></i> Editar
+                                        </a>
+                                        <a asp-action="DeleteStudent" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
+                                           class="btn-action btn-delete">
+                                            <i class="fas fa-trash-alt"></i>  Eliminar
+                                        </a>
+                                        <a asp-action="Details" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
+                                           class="btn-action btn-info">
+                                            <i class="fas fa-info-circle"></i> Detalles
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="no-students">
+                    <i class="fas fa-user-graduate"></i> No hay alumnos registrados en este grupo
+                </div>
+            }
+        </div>
+    }
+</div>

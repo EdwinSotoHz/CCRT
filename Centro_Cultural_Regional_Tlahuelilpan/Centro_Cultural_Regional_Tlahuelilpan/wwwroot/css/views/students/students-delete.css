@@ -3,12 +3,9 @@
     --secondary-color: #34495e;
     --accent-color: #536DFE;
     --danger-color: #e74c3c;
-    --success-color: #2ecc71;
     --bg-color: #f5f7fa;
     --card-bg: #ffffff;
     --text-color: #2c3e50;
-    --text-muted: #7f8c8d;
-    --border-color: #e0e0e0;
 }
 
 body {
@@ -96,10 +93,21 @@ body {
     }
 
 .btn-secondary {
-    background-color: var(--secondary-color);
+    background-color: #95a5a6; /* Cambio a gris */
     color: white;
 }
 
     .btn-secondary:hover {
-        background-color: #2c3e50;
+        background-color: #7f8c8d; /* Tonos grises más oscuros al hover */
     }
+
+@media (max-width: 576px) {
+    .delete-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

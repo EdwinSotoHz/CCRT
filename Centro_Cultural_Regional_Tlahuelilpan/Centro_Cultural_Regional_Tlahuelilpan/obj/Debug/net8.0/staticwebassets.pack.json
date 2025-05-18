@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\views\\students\\student-details.css"
     },
     {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students-add-to-group.css",
+      "PackagePath": "staticwebassets\\css\\views\\students\\students-add-to-group.css"
+    },
+    {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students-create-edit.css",
       "PackagePath": "staticwebassets\\css\\views\\students\\students-create-edit.css"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\students.css",
       "PackagePath": "staticwebassets\\css\\views\\students\\students.css"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\students.css",
+      "PackagePath": "staticwebassets\\css\\views\\teachersControl\\students.css"
     },
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachers\\teachers-create-edit.css",
@@ -307,6 +315,10 @@
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ARTES_VISUALES.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\ARTES_VISUALES.jpg"
     },
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",

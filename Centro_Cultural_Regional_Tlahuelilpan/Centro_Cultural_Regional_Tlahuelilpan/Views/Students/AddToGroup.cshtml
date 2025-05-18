@@ -1,0 +1,44 @@
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.StudentGroupVM
+@{
+    ViewData["Title"] = "Agregar Alumno a Grupo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/students/students-add-to-group.css" asp-append-version="true" />
+}
+
+<div class="form-container">
+    <h1>Agregar Alumno a Grupo</h1>
+
+    <div class="info-card">
+        <strong>Alumno:</strong> @Model.NombreAlumno
+    </div>
+
+    <form asp-action="Confirm_AddToGroup" method="post">
+        <input type="hidden" asp-for="AlumnoId" />
+
+        <div class="form-section">
+            <h2><i class="fas fa-chalkboard-teacher"></i> Seleccionar Grupo</h2>
+            <div class="form-group">
+                <label>Grupos Disponibles</label>
+                <select asp-for="GrupoId" asp-items="Model.GruposDisponibles"
+                        class="form-control" required>
+                    <option value="">-- Seleccionar Grupo --</option>
+                </select>
+                <span asp-validation-for="GrupoId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+            <a asp-action="Students" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -6,11 +6,13 @@ wwwroot\css\views\groups\groups-create-edit.css
 wwwroot\css\views\groups\groups-delete.css
 wwwroot\css\views\students\student-details.css
 wwwroot\css\views\students\students.css
+wwwroot\css\views\students\students-add-to-group.css
 wwwroot\css\views\students\students-create-edit.css
 wwwroot\css\views\students\students-delete.css
 wwwroot\css\views\teachers\teachers.css
 wwwroot\css\views\teachers\teachers-create-edit.css
 wwwroot\css\views\teachers\teachers-delete.css
+wwwroot\css\views\teachersControl\students.css
 wwwroot\css\views\workshops\workshops.css
 wwwroot\css\views\workshops\workshops-create-edit.css
 wwwroot\css\views\workshops\workshops-delete.css
@@ -74,6 +76,7 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\src\img\ARTES_VISUALES.jpg
 wwwroot\src\img\ballet.jpg
 wwwroot\src\img\exploracion.jpg
 wwwroot\src\img\musica.jpg

@@ -1,4 +1,4 @@
-﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.StudentVM
+﻿@model Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.FileStudentVM
 @{
     ViewData["Title"] = Model.Alumno.AlumnoId == 0 ? "Agregar Alumno" : "Editar Alumno";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,6 +7,7 @@
 @section Styles {
     <link rel="stylesheet" href="~/css/views/students/students-create-edit.css" asp-append-version="true" />
 }
+
 
 <div class="form-container">
     <h1>@(Model.Alumno.AlumnoId == 0 ? "Agregar Alumno" : "Editar Alumno")</h1>
@@ -18,68 +19,53 @@
         <div class="form-section">
             <h2><i class="fas fa-folder-open"></i> Documentación del Expediente</h2>
             <div class="expediente-grid">
-                <!-- Acta de Nacimiento -->
                 <div class="form-check">
                     <input type="checkbox" id="ActaNacimientoCheckbox"
-                    @(Model.Expediente.ActaNacimiento == true ? "checked" : "") />
+                    @(Model.ActaNacimiento ? "checked" : "") />
                     <label for="ActaNacimientoCheckbox" class="form-check-label">Acta de Nacimiento</label>
-                    <input type="hidden" asp-for="Expediente.ActaNacimiento" id="ActaNacimientoHidden" />
+                    <input type="hidden" asp-for="ActaNacimiento" id="ActaNacimientoHidden" />
                 </div>
-
-                <!-- CURP -->
                 <div class="form-check">
                     <input type="checkbox" id="CurpCheckbox"
-                    @(Model.Expediente.Curp == true ? "checked" : "") />
+                    @(Model.Curp ? "checked" : "") />
                     <label for="CurpCheckbox" class="form-check-label">CURP</label>
-                    <input type="hidden" asp-for="Expediente.Curp" id="CurpHidden" />
+                    <input type="hidden" asp-for="Curp" id="CurpHidden" />
                 </div>
-
-                <!-- Comprobante Domicilio -->
                 <div class="form-check">
                     <input type="checkbox" id="ComprobanteDomicilioCheckbox"
-                    @(Model.Expediente.ComprobanteDomicilio == true ? "checked" : "") />
+                    @(Model.ComprobanteDomicilio ? "checked" : "") />
                     <label for="ComprobanteDomicilioCheckbox" class="form-check-label">Comprobante Domicilio</label>
-                    <input type="hidden" asp-for="Expediente.ComprobanteDomicilio" id="ComprobanteDomicilioHidden" />
+                    <input type="hidden" asp-for="ComprobanteDomicilio" id="ComprobanteDomicilioHidden" />
                 </div>
-
-                <!-- INE -->
                 <div class="form-check">
                     <input type="checkbox" id="IneCheckbox"
-                    @(Model.Expediente.Ine == true ? "checked" : "") />
+                    @(Model.Ine ? "checked" : "") />
                     <label for="IneCheckbox" class="form-check-label">INE</label>
-                    <input type="hidden" asp-for="Expediente.Ine" id="IneHidden" />
+                    <input type="hidden" asp-for="Ine" id="IneHidden" />
                 </div>
-
-                <!-- Certificado Médico -->
                 <div class="form-check">
                     <input type="checkbox" id="CertificadoMedicoCheckbox"
-                    @(Model.Expediente.CertificadoMedico == true ? "checked" : "") />
+                    @(Model.CertificadoMedico ? "checked" : "") />
                     <label for="CertificadoMedicoCheckbox" class="form-check-label">Certificado Médico</label>
-                    <input type="hidden" asp-for="Expediente.CertificadoMedico" id="CertificadoMedicoHidden" />
+                    <input type="hidden" asp-for="CertificadoMedico" id="CertificadoMedicoHidden" />
                 </div>
-
-                <!-- Recibo de Pago -->
                 <div class="form-check">
                     <input type="checkbox" id="ReciboPagoCheckbox"
-                    @(Model.Expediente.ReciboPago == true ? "checked" : "") />
+                    @(Model.ReciboPago ? "checked" : "") />
                     <label for="ReciboPagoCheckbox" class="form-check-label">Recibo de Pago</label>
-                    <input type="hidden" asp-for="Expediente.ReciboPago" id="ReciboPagoHidden" />
+                    <input type="hidden" asp-for="ReciboPago" id="ReciboPagoHidden" />
                 </div>
-
-                <!-- Fotografías -->
                 <div class="form-check">
                     <input type="checkbox" id="FotografiasCheckbox"
-                    @(Model.Expediente.Fotografias == true ? "checked" : "") />
+                    @(Model.Fotografias ? "checked" : "") />
                     <label for="FotografiasCheckbox" class="form-check-label">Fotografías</label>
-                    <input type="hidden" asp-for="Expediente.Fotografias" id="FotografiasHidden" />
+                    <input type="hidden" asp-for="Fotografias" id="FotografiasHidden" />
                 </div>
-
-                <!-- Documentos Completos -->
                 <div class="form-check">
                     <input type="checkbox" id="DocumentosCompletosCheckbox"
-                    @(Model.Expediente.DocumentosCompletos == true ? "checked" : "") />
+                    @(Model.DocumentosCompletos ? "checked" : "") />
                     <label for="DocumentosCompletosCheckbox" class="form-check-label">Documentos Completos</label>
-                    <input type="hidden" asp-for="Expediente.DocumentosCompletos" id="DocumentosCompletosHidden" />
+                    <input type="hidden" asp-for="DocumentosCompletos" id="DocumentosCompletosHidden" />
                 </div>
             </div>
         </div>
@@ -87,64 +73,41 @@
         <!-- Datos personales -->
         <div class="form-section">
             <h2><i class="fas fa-user-graduate"></i> Datos Personales</h2>
-            <div class="form-grid">
-                <div class="form-group">
-                    <label asp-for="Alumno.Nombre">Nombre(s)</label>
-                    <input asp-for="Alumno.Nombre" class="form-control" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.ApellidoPaterno">Apellido Paterno</label>
-                    <input asp-for="Alumno.ApellidoPaterno" class="form-control" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.ApellidoMaterno">Apellido Materno</label>
-                    <input asp-for="Alumno.ApellidoMaterno" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.FechaNacimiento">Fecha de Nacimiento</label>
-                    <input asp-for="Alumno.FechaNacimiento" type="date" class="form-control" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.Localidad">Localidad</label>
-                    <input asp-for="Alumno.Localidad" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.NumeroTelefono">Teléfono</label>
-                    <input asp-for="Alumno.NumeroTelefono" class="form-control" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.CorreoElectronico">Correo Electrónico</label>
-                    <input asp-for="Alumno.CorreoElectronico" type="email" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.AdultoResponsable">Adulto Responsable</label>
-                    <input asp-for="Alumno.AdultoResponsable" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Alumno.TelefonoResponsable">Teléfono Responsable</label>
-                    <input asp-for="Alumno.TelefonoResponsable" class="form-control" />
-                </div>
-            </div>
-        </div>
-
-        <!-- Grupo -->
-        <div class="form-section">
-            <h2><i class="fas fa-chalkboard-teacher"></i> Seleccionar Grupo</h2>
             <div class="form-group">
-                <label asp-for="Progreso.GrupoId">Grupo Disponible</label>
-                <select asp-for="Progreso.GrupoId" asp-items="Model.GruposDisponibles"
-                        class="form-control" id="grupoSelect" required>
-                    <option value="">-- Seleccionar Grupo --</option>
-                </select>
+                <label asp-for="Alumno.Nombre">Nombre(s)</label>
+                <input asp-for="Alumno.Nombre" class="form-control" required />
             </div>
             <div class="form-group">
-                <label asp-for="Progreso.Estado">Estado</label>
-                <select asp-for="Progreso.Estado" class="form-control" required>
-                    <option value="Inscrito">Inscrito</option>
-                    <option value="En curso">En curso</option>
-                    <option value="Egresado">Egresado</option>
-                    <option value="Dado de baja">Dado de baja</option>
-                </select>
+                <label asp-for="Alumno.ApellidoPaterno">Apellido Paterno</label>
+                <input asp-for="Alumno.ApellidoPaterno" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.ApellidoMaterno">Apellido Materno</label>
+                <input asp-for="Alumno.ApellidoMaterno" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.FechaNacimiento">Fecha de Nacimiento</label>
+                <input asp-for="Alumno.FechaNacimiento" type="date" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.Localidad">Localidad</label>
+                <input asp-for="Alumno.Localidad" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.NumeroTelefono">Teléfono</label>
+                <input asp-for="Alumno.NumeroTelefono" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.CorreoElectronico">Correo Electrónico</label>
+                <input asp-for="Alumno.CorreoElectronico" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.AdultoResponsable">Adulto Responsable</label>
+                <input asp-for="Alumno.AdultoResponsable" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Alumno.TelefonoResponsable">Teléfono Responsable</label>
+                <input asp-for="Alumno.TelefonoResponsable" class="form-control" />
             </div>
         </div>
 
@@ -158,29 +121,6 @@
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-
-    <script>
-        $(document).ready(function () {
-            $('#tallerSelect').change(function () {
-                var tallerId = $(this).val();
-                if (tallerId) {
-                    $.getJSON('/Students/GetGruposByTaller', { tallerId: tallerId }, function (data) {
-                        var items = '<option value="">-- Seleccionar Grupo --</option>';
-                        $.each(data, function (i, grupo) {
-                            items += '<option value="' + grupo.value + '">' + grupo.text + '</option>';
-                        });
-                        $('#grupoSelect').html(items);
-                    });
-                } else {
-                    $('#grupoSelect').html('<option value="">-- Seleccionar Grupo --</option>');
-                }
-            });
-        });
-    </script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             function setupCheckbox(checkboxId, hiddenId) {
@@ -189,16 +129,13 @@
 
                 if (!checkbox || !hiddenInput) return;
 
-                // Valor inicial
                 hiddenInput.value = checkbox.checked;
 
-                // Cambiar valor al hacer click
                 checkbox.addEventListener("change", function () {
                     hiddenInput.value = checkbox.checked;
                 });
             }
 
-            // Configurar cada checkbox
             setupCheckbox("ActaNacimientoCheckbox", "ActaNacimientoHidden");
             setupCheckbox("CurpCheckbox", "CurpHidden");
             setupCheckbox("ComprobanteDomicilioCheckbox", "ComprobanteDomicilioHidden");
@@ -209,8 +146,4 @@
             setupCheckbox("DocumentosCompletosCheckbox", "DocumentosCompletosHidden");
         });
     </script>
-
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
 }

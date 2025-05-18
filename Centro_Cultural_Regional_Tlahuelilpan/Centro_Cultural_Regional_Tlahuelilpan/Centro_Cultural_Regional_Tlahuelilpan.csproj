@@ -20,4 +20,11 @@
     <Folder Include="wwwroot\src\csv\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\css\views\students\students-create-edit.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
