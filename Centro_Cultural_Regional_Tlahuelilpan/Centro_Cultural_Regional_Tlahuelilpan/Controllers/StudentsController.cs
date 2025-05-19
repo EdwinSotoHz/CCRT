@@ -150,7 +150,8 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
 
             _DBContext.SaveChanges();
             TempData["SuccessMessage"] = "✅ Alumno guardado exitosamente.";
-            return RedirectToAction("Students");
+            TempData["Direction"] = "Admin";
+            return RedirectToAction("Details", new { id = vm.Alumno.AlumnoId });
         }
 
         // Eliminar alumno (sin cambios)
@@ -173,6 +174,8 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
         [HttpPost]
         public IActionResult Confirm_DeleteStudent(int AlumnoId)
         {
+            
+
             var alumno = _DBContext.Alumnos
                 .Include(a => a.Expediente)
                 .Include(a => a.ProgresoEstudiantils)
@@ -263,7 +266,7 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
             _DBContext.SaveChanges();
 
             TempData["SuccessMessage"] = "✅ Alumno inscrito exitosamente en el grupo.";
-
+            TempData["Direction"] = "Admin";
             return RedirectToAction("Details", new { id = vm.AlumnoId });
         }
     }

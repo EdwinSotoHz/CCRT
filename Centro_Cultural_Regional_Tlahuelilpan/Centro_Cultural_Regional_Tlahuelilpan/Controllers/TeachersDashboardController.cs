@@ -127,6 +127,7 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
             TempData["SuccessMessage"] = "✅ Progreso del alumno actualizado exitosamente.";
 
             // Redireccionar a la acción Details del StudentsController
+            TempData["Direction"] = "Teachers";
             return RedirectToAction("Details", "Students", new { id = vm.AlumnoId });
         }
     }

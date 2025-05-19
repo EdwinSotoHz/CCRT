@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\controllers\\teachersdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\controllers\\teachersdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\teachersdashboard\\editalumnprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\teachersdashboard\\editalumnprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\students\\createeditstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\students\\createeditstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\students\\students.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\students\\students.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\models\\viewmodels\\studentprogressvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\models\\viewmodels\\studentprogressvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\controllers\\teachersdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\controllers\\teachersdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\teachersdashboard\\teachersdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\teachersdashboard\\teachersdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\wwwroot\\css\\views\\teacherscontrol\\student-progress.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\wwwroot\\css\\views\\teacherscontrol\\student-progress.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|c:\\users\\edwin\\documents\\asp\\ccrt\\centro_cultural_regional_tlahuelilpan\\centro_cultural_regional_tlahuelilpan\\models\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3792AFEE-E277-4BDE-ACE7-67C9E232CDB3}|Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan.csproj|solutionrelative:centro_cultural_regional_tlahuelilpan\\models\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +58,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateEditStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\CreateEditStudent.cshtml",
-              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\CreateEditStudent.cshtml",
-              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\CreateEditStudent.cshtml",
-              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\CreateEditStudent.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAAD8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T23:14:10.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
-              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
-              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
-              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAG8AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T23:04:07.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "TeachersDashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\TeachersDashboard.cshtml",
               "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\TeachersDashboard.cshtml",
               "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\TeachersDashboard.cshtml",
               "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\TeachersDashboard.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T23:00:37.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "student-progress.css",
-              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
-              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
-              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
-              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAIwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-18T21:48:33.229Z",
+              "WhenOpened": "2025-05-19T02:53:30.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditAlumnProgress.cshtml",
-              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\EditAlumnProgress.cshtml",
-              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\EditAlumnProgress.cshtml",
-              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\EditAlumnProgress.cshtml",
-              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\TeachersDashboard\\EditAlumnProgress.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Title": "Students.cshtml",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Students.cshtml",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Students.cshtml",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Students.cshtml",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Students.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T21:47:58.123Z",
+              "WhenOpened": "2025-05-19T02:53:22.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentProgressVM.cs",
-              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\StudentProgressVM.cs",
-              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\StudentProgressVM.cs",
-              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\StudentProgressVM.cs",
-              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\StudentProgressVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:41:22.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TeachersDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\TeachersDashboardController.cs",
               "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\TeachersDashboardController.cs",
               "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\TeachersDashboardController.cs",
               "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\TeachersDashboardController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAowIEAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:39:56.174Z",
+              "WhenOpened": "2025-05-19T02:18:27.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T02:18:26.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:04:16.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T01:42:57.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Models\\ViewModels\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:39:36.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAQwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:25:47.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T01:24:37.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Centro_Cultural_Regional_Tlahuelilpan\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T01:24:24.105Z",
               "EditorCaption": ""
             }
           ]

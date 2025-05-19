@@ -2,6 +2,27 @@
 @{
     ViewData["Title"] = "Detalles del Alumno";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    /********************** PARA REDIRECCIONAR **********************/
+    string direction = TempData["Direction"] as string;
+    string controllerName = "Home";
+    string actionMethod = "Index";
+    bool isBackLink = false;
+
+    if (direction == "Admin")
+    {
+        controllerName = "Students";
+        actionMethod = "Students";
+    }
+    else if (direction == "Teachers")
+    {
+        controllerName = "TeachersDashboard";
+        actionMethod = "TeachersDashboard";
+    }
+    else
+    {
+        isBackLink = true;
+    }
 }
 
 @section Styles {
@@ -11,9 +32,18 @@
 <div class="student-details-container">
     <div class="student-header">
         <h1>Detalles del Alumno</h1>
-        <a href="#" onclick="window.history.back(); return false;" class="btn-back">
-            <i class="fas fa-arrow-left"></i> Volver a la lista
-        </a>
+        @if (isBackLink)
+        {
+            <a href="javascript:history.back()" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Volver
+            </a>
+        }
+        else
+        {
+            <a asp-controller="@controllerName" asp-action="@actionMethod" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Volver a la lista
+            </a>
+        }
     </div>
 
     <div class="student-card">
