@@ -1,20 +1,17 @@
 ﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE.Grupo>
 @{
-    ViewData["Title"] = "Alumnos por Grupo";
+    ViewData["Title"] = "Control de Alumnos";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section Styles {
     <link rel="stylesheet" href="~/css/views/teachersControl/students.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " />
 }
 
 <div class="students-container">
     <div class="students-header">
         <h1 class="students-title">Alumnos por Grupo</h1>
-        <a class="btn-add" asp-action="CreateEditStudent" asp-controller="Students">
-            <i class="fas fa-plus"></i> Agregar Alumno
-        </a>
     </div>
 
     @foreach (var grupo in Model)
@@ -59,13 +56,12 @@
                                         <span class="status-badge @progreso.Estado.ToLower()">@progreso.Estado</span>
                                     </td>
                                     <td class="actions-cell">
-                                        <a asp-action="CreateEditStudent" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
+                                        <a asp-action="EditAlumnProgress"
+                                           asp-controller="TeachersDashboard"
+                                           asp-route-alumnoId="@alumno.AlumnoId"
+                                           asp-route-grupoId="@grupo.GrupoId"
                                            class="btn-action btn-edit">
-                                            <i class="fas fa-edit"></i> Editar
-                                        </a>
-                                        <a asp-action="DeleteStudent" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
-                                           class="btn-action btn-delete">
-                                            <i class="fas fa-trash-alt"></i>  Eliminar
+                                            <i class="fas fa-edit"></i> Editar Progreso
                                         </a>
                                         <a asp-action="Details" asp-controller="Students" asp-route-id="@alumno.AlumnoId"
                                            class="btn-action btn-info">

@@ -61,11 +61,11 @@
                     <label for="FotografiasCheckbox" class="form-check-label">Fotografías</label>
                     <input type="hidden" asp-for="Fotografias" id="FotografiasHidden" />
                 </div>
-                <div class="form-check">
+                <div class="form-check" hidden>
                     <input type="checkbox" id="DocumentosCompletosCheckbox"
-                    @(Model.DocumentosCompletos ? "checked" : "") />
-                    <label for="DocumentosCompletosCheckbox" class="form-check-label">Documentos Completos</label>
-                    <input type="hidden" asp-for="DocumentosCompletos" id="DocumentosCompletosHidden" />
+                    @(Model.DocumentosCompletos ? "checked" : "") hidden />
+                    <label for="DocumentosCompletosCheckbox" class="form-check-label" hidden>Documentos Completos</label>
+                    <input type="hidden" asp-for="DocumentosCompletos" id="DocumentosCompletosHidden" hidden />
                 </div>
             </div>
         </div>

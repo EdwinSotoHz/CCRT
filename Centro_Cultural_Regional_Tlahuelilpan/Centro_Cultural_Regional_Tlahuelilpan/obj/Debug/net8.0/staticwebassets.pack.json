@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\css\\views\\students\\students.css"
     },
     {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
+      "PackagePath": "staticwebassets\\css\\views\\teachersControl\\student-progress.css"
+    },
+    {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\students.css",
       "PackagePath": "staticwebassets\\css\\views\\teachersControl\\students.css"
     },
@@ -321,12 +325,20 @@
       "PackagePath": "staticwebassets\\src\\img\\ARTES_VISUALES.jpg"
     },
     {
-      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",
-      "PackagePath": "staticwebassets\\src\\img\\ballet.jpg"
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\YOGA.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\YOGA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\canto.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\canto.jpg"
     },
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\exploracion.jpg",
       "PackagePath": "staticwebassets\\src\\img\\exploracion.jpg"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\guitar.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\guitar.jpg"
     },
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\musica.jpg",
@@ -335,6 +347,10 @@
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\percusiones.jpg",
       "PackagePath": "staticwebassets\\src\\img\\percusiones.jpg"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\violin.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\violin.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Centro_Cultural_Regional_Tlahuelilpan.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

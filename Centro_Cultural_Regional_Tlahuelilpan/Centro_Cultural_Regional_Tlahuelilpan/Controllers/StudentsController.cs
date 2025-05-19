@@ -86,11 +86,11 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
         {
             if (vm.Alumno.AlumnoId == 0)
             {
-                // 👤 Crear nuevo alumno
+                // Crear nuevo alumno
                 _DBContext.Alumnos.Add(vm.Alumno);
                 _DBContext.SaveChanges();
 
-                // 📄 Asignar expediente con ID del nuevo alumno
+                // Asignar expediente con ID del nuevo alumno
                 var expediente = new Expediente
                 {
                     AlumnoId = vm.Alumno.AlumnoId,

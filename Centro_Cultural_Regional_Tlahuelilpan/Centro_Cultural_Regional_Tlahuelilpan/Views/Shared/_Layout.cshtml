@@ -24,10 +24,9 @@
                     <a class="nav-link @(ViewContext.RouteData.Values["Action"].ToString() == "Dashboard" ? "active" : "")"
                        asp-area="" asp-controller="Home" asp-action="Dashboard">Administración</a>
                 </li>
-                <!-- Ejemplo de otra sección -->
                 <li class="nav-item">
-                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Teachers" ? "active" : "")"
-                       asp-area="" asp-controller="TeachersControl" asp-action="TeachersDashboard">Docentes</a>
+                    <a class="nav-link @(ViewContext.RouteData.Values["Action"].ToString() == "TeachersDashboard" ? "active" : "")"
+                       asp-area="" asp-controller="TeachersDashboard" asp-action="TeachersDashboard">Docentes</a>
                 </li>
             </ul>
         </nav>

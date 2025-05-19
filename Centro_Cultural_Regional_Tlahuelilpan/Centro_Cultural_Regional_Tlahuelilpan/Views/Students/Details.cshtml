@@ -11,7 +11,7 @@
 <div class="student-details-container">
     <div class="student-header">
         <h1>Detalles del Alumno</h1>
-        <a asp-action="Students" class="btn-back">
+        <a href="#" onclick="window.history.back(); return false;" class="btn-back">
             <i class="fas fa-arrow-left"></i> Volver a la lista
         </a>
     </div>
@@ -109,7 +109,7 @@
                     </span>
                 </div>
                 <div class="expediente-item">
-                    <span class="expediente-label">Documentos completos:</span>
+                    <span class="expediente-label"> <b>Documentos completos:</b> </span>
                     <span class="@(Model.Expediente?.DocumentosCompletos == true ? "check-yes" : "check-no")">
                         @(Model.Expediente?.DocumentosCompletos == true ? "Sí" : "No")
                     </span>

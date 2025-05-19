@@ -106,6 +106,7 @@ public partial class CentroCulturalRegionalTlahuelilpanContext : DbContext
 
         modelBuilder.Entity<Expediente>(entity =>
         {
+            entity.ToTable(tb => tb.HasTrigger("TR_Actualizar_Documentos_Completos"));
             entity.HasIndex(e => e.DocumentosCompletos, "IDX_Expedientes_Completos").HasFilter("([Documentos_Completos]=(1))");
 
             entity.HasIndex(e => e.AlumnoId, "UQ_Alumno_Expediente").IsUnique();

@@ -76,20 +76,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcU3R1ZGVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersControl/CreateEditStudent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNDb250cm9sXENyZWF0ZUVkaXRTdHVkZW50LmNzaHRtbA==
+[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersDashboard/EditAlumnProgress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNEYXNoYm9hcmRcRWRpdEFsdW1uUHJvZ3Jlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersControl/DeleteStudent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNDb250cm9sXERlbGV0ZVN0dWRlbnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersControl/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNDb250cm9sXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersControl/TeachersDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNDb250cm9sXFRlYWNoZXJzRGFzaGJvYXJkLmNzaHRtbA==
+[C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/TeachersDashboard/TeachersDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNEYXNoYm9hcmRcVGVhY2hlcnNEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edwin/Documents/ASP/CCRT/Centro_Cultural_Regional_Tlahuelilpan/Centro_Cultural_Regional_Tlahuelilpan/Views/Teachers/CreateEditTeacherUser.cshtml]

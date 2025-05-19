@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fVR0K1h4nwHtS1Y8/HN9ywiQG1K5l3LqdGI/NX0zEcU=",
+  "Hash": "CkV9Yv40WU+8d5MSRvjEnQK5UVY80XByRX5+ce22uq8=",
   "Source": "Centro_Cultural_Regional_Tlahuelilpan",
   "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
   "Mode": "Default",
@@ -351,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\views\\teachers\\teachers-delete.css"
+    },
+    {
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
+      "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
+      "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
+      "RelativePath": "css/views/teachersControl/student-progress#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y4yndr33t1",
+      "Integrity": "boqJEyZhUZrJeUSbwsQF7y1li0NlHWfTiApwGHU8o7Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\views\\teachersControl\\student-progress.css"
     },
     {
       "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\students.css",
@@ -1718,12 +1739,12 @@
       "OriginalItemSpec": "wwwroot\\src\\img\\ARTES_VISUALES.jpg"
     },
     {
-      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\canto.jpg",
       "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
       "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
-      "RelativePath": "src/img/ballet#[.{fingerprint}]?.jpg",
+      "RelativePath": "src/img/canto#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1732,11 +1753,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5sr7x3ubxu",
-      "Integrity": "ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4=",
+      "Fingerprint": "8ypbrrzigu",
+      "Integrity": "4LDc93NZglKKeTHTv0gR/V6u9LsQCWotdlYv5SzWPr0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\src\\img\\ballet.jpg"
+      "OriginalItemSpec": "wwwroot\\src\\img\\canto.jpg"
     },
     {
       "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\exploracion.jpg",
@@ -1758,6 +1779,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\src\\img\\exploracion.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\guitar.jpg",
+      "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
+      "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
+      "RelativePath": "src/img/guitar#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mnsnn5xyii",
+      "Integrity": "0iujl7O8K2RYkp5MB+IkKpHU7KECutQ83nu91jBRnrE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\img\\guitar.jpg"
     },
     {
       "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\musica.jpg",
@@ -1800,6 +1842,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\src\\img\\percusiones.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\violin.jpg",
+      "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
+      "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
+      "RelativePath": "src/img/violin#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k8bsjj0q97",
+      "Integrity": "HDnzbJQgrMfyNkj6lX4zFJmuSpBAMg9d1Bp2KWdPHCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\img\\violin.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\YOGA.jpg",
+      "SourceId": "Centro_Cultural_Regional_Tlahuelilpan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\",
+      "BasePath": "_content/Centro_Cultural_Regional_Tlahuelilpan",
+      "RelativePath": "src/img/YOGA#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kk4kiuvop4",
+      "Integrity": "JM6svmfeGzhqr5eD46GmQHONEGwDs2km+RydqTsU7r8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\img\\YOGA.jpg"
     }
   ],
   "Endpoints": [
@@ -3116,6 +3200,88 @@
       ]
     },
     {
+      "Route": "css/views/teachersControl/student-progress.css",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"boqJEyZhUZrJeUSbwsQF7y1li0NlHWfTiApwGHU8o7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 21:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-boqJEyZhUZrJeUSbwsQF7y1li0NlHWfTiApwGHU8o7Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/views/teachersControl/student-progress.y4yndr33t1.css",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\student-progress.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"boqJEyZhUZrJeUSbwsQF7y1li0NlHWfTiApwGHU8o7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 21:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y4yndr33t1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/views/teachersControl/student-progress.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-boqJEyZhUZrJeUSbwsQF7y1li0NlHWfTiApwGHU8o7Y="
+        }
+      ]
+    },
+    {
       "Route": "css/views/teachersControl/students.css",
       "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\teachersControl\\students.css",
       "Selectors": [],
@@ -3138,7 +3304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 19:42:57 GMT"
+          "Value": "Sun, 18 May 2025 21:50:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3175,7 +3341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 19:42:57 GMT"
+          "Value": "Sun, 18 May 2025 21:50:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8446,8 +8612,8 @@
       ]
     },
     {
-      "Route": "src/img/ballet.5sr7x3ubxu.jpg",
-      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",
+      "Route": "src/img/canto.8ypbrrzigu.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\canto.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8456,7 +8622,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24656"
+          "Value": "26462"
         },
         {
           "Name": "Content-Type",
@@ -8464,11 +8630,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4=\""
+          "Value": "\"4LDc93NZglKKeTHTv0gR/V6u9LsQCWotdlYv5SzWPr0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 17:21:33 GMT"
+          "Value": "Mon, 19 May 2025 00:35:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8478,21 +8644,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5sr7x3ubxu"
+          "Value": "8ypbrrzigu"
         },
         {
           "Name": "label",
-          "Value": "src/img/ballet.jpg"
+          "Value": "src/img/canto.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4="
+          "Value": "sha256-4LDc93NZglKKeTHTv0gR/V6u9LsQCWotdlYv5SzWPr0="
         }
       ]
     },
     {
-      "Route": "src/img/ballet.jpg",
-      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",
+      "Route": "src/img/canto.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\canto.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8501,7 +8667,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24656"
+          "Value": "26462"
         },
         {
           "Name": "Content-Type",
@@ -8509,11 +8675,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4=\""
+          "Value": "\"4LDc93NZglKKeTHTv0gR/V6u9LsQCWotdlYv5SzWPr0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 17:21:33 GMT"
+          "Value": "Mon, 19 May 2025 00:35:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8523,7 +8689,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4="
+          "Value": "sha256-4LDc93NZglKKeTHTv0gR/V6u9LsQCWotdlYv5SzWPr0="
         }
       ]
     },
@@ -8606,6 +8772,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4EFRQGT8kbTZF8fGhw76nIuhW2W0xcjKq853rm3o4Sc="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/guitar.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\guitar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iujl7O8K2RYkp5MB+IkKpHU7KECutQ83nu91jBRnrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iujl7O8K2RYkp5MB+IkKpHU7KECutQ83nu91jBRnrE="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/guitar.mnsnn5xyii.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\guitar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iujl7O8K2RYkp5MB+IkKpHU7KECutQ83nu91jBRnrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:34:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mnsnn5xyii"
+        },
+        {
+          "Name": "label",
+          "Value": "src/img/guitar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iujl7O8K2RYkp5MB+IkKpHU7KECutQ83nu91jBRnrE="
         }
       ]
     },
@@ -8770,6 +9018,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-B+SYY/ZxXwpWHO3O3CvVo3k7puSTeKJNW+whuPuizPE="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/violin.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\violin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HDnzbJQgrMfyNkj6lX4zFJmuSpBAMg9d1Bp2KWdPHCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:34:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HDnzbJQgrMfyNkj6lX4zFJmuSpBAMg9d1Bp2KWdPHCM="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/violin.k8bsjj0q97.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\violin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HDnzbJQgrMfyNkj6lX4zFJmuSpBAMg9d1Bp2KWdPHCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:34:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k8bsjj0q97"
+        },
+        {
+          "Name": "label",
+          "Value": "src/img/violin.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HDnzbJQgrMfyNkj6lX4zFJmuSpBAMg9d1Bp2KWdPHCM="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/YOGA.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\YOGA.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JM6svmfeGzhqr5eD46GmQHONEGwDs2km+RydqTsU7r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JM6svmfeGzhqr5eD46GmQHONEGwDs2km+RydqTsU7r8="
+        }
+      ]
+    },
+    {
+      "Route": "src/img/YOGA.kk4kiuvop4.jpg",
+      "AssetFile": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\YOGA.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JM6svmfeGzhqr5eD46GmQHONEGwDs2km+RydqTsU7r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kk4kiuvop4"
+        },
+        {
+          "Name": "label",
+          "Value": "src/img/YOGA.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JM6svmfeGzhqr5eD46GmQHONEGwDs2km+RydqTsU7r8="
         }
       ]
     }
