@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ygburxjaru</Fingerprint>
-      <Integrity>kmRYPpiV25giHf5OGyl25SnzyMFrtzHYd8qKfwi7q7g=</Integrity>
+      <Fingerprint>5f0vnfhpil</Fingerprint>
+      <Integrity>4Xbtf8lMtB0DgL/OM1hMlYxKyIsoNf8Tl9iMmaAMujQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\dashboard.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tqdty9esae</Fingerprint>
-      <Integrity>1fDf8+H0CcxsWfiy3aNg1cxpqx83dl6rTjupPF5RFPg=</Integrity>
+      <Fingerprint>t2r34749bq</Fingerprint>
+      <Integrity>K9SMVBvKRpP6tfjPSsPRDCq1YQGr0f1lfMs4qWb2PE0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\groups\groups-create-edit.css'))</OriginalItemSpec>
@@ -120,11 +120,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>j1zx5ef9tr</Fingerprint>
-      <Integrity>WYO3W7YX+4zjv0Ubpjab9993Bf3y2jT8kC/3wYRzaVI=</Integrity>
+      <Fingerprint>37v2ksyxui</Fingerprint>
+      <Integrity>b+54b0p1VYF6aTJGUEfhnLFxkkDLtNZFmbbvAQ6tK7U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\groups\groups-delete.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\graduates.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Centro_Cultural_Regional_Tlahuelilpan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Centro_Cultural_Regional_Tlahuelilpan</BasePath>
+      <RelativePath>css/views/students/graduates.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kltwk4opdn</Fingerprint>
+      <Integrity>KL7Wf9Qm09bTsaFcVtsE4x4hamQy9GTBYbtGbF/GP9Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\graduates.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\student-details.css'))">
       <SourceType>Package</SourceType>
@@ -156,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>grv5vkbefh</Fingerprint>
-      <Integrity>DK+jMNF/RW8yT6vq1gQwPaxistUwrRRNWmKGJ/1nkYI=</Integrity>
+      <Fingerprint>no3l5i1qil</Fingerprint>
+      <Integrity>Gb2ZPwTn9I2bv/GxIlVDKxkUFQwFCX2q3v/HEyOA7tg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\students.css'))</OriginalItemSpec>
@@ -1457,6 +1475,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\src\img\ARTES_VISUALES.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\src\img\ballet.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Centro_Cultural_Regional_Tlahuelilpan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Centro_Cultural_Regional_Tlahuelilpan</BasePath>
+      <RelativePath>src/img/ballet.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5sr7x3ubxu</Fingerprint>
+      <Integrity>ZdX8EXEP/OJ84nNjyT1KS4+qcufHu0I6zkhiHqh2LW4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\src\img\ballet.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\src\img\canto.jpg'))">
       <SourceType>Package</SourceType>

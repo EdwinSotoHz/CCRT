@@ -1,0 +1,91 @@
+.students-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.students-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8f9fa;
+    color: #495057;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #ced4da;
+}
+
+    .btn-back:hover {
+        background-color: #e9ecef;
+        color: #2c3e50;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+.no-students {
+    padding: 30px 20px;
+    text-align: center;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px dashed #dee2e6;
+    font-style: italic;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+    border: 1px solid #dee2e6;
+}
+
+    .students-table thead tr {
+        background-color: #f1f3f5;
+        color: #495057;
+        font-weight: 500;
+        border-bottom: 2px solid #ced4da;
+    }
+
+    .students-table th,
+    .students-table td {
+        padding: 14px 18px;
+        text-align: left;
+        vertical-align: middle;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .students-table tbody tr.student-row:hover {
+        background-color: #f8f9fa;
+    }
+
+    .students-table th {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }

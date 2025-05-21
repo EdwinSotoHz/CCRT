@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Centro_Cultural_Regional_Tlahuelilpan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a79fd892ba58e97ddf0a901a1dfc107aa1728614")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1360d4ce15a300da7093297b8bf460a3301bfbd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Centro_Cultural_Regional_Tlahuelilpan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Centro_Cultural_Regional_Tlahuelilpan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

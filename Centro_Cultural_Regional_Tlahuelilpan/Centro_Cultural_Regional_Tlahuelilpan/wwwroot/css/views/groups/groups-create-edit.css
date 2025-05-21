@@ -85,10 +85,16 @@ label {
 .btn-secondary {
     background-color: #95a5a6;
     color: white;
+    text-decoration: none; /* Esto quita el subrayado del texto */
+    border: none; /* Esto quita el borde del botón */
+    display: inline-block; /* Para que funcione correctamente como enlace */
+    text-align: center; /* Centra el texto dentro del botón */
+    line-height: normal; /* Asegura una altura de línea consistente */
 }
 
     .btn-secondary:hover {
         background-color: #7f8c8d;
+        text-decoration: none; /* También quitamos el subrayado en hover */
     }
 
 .current-image {

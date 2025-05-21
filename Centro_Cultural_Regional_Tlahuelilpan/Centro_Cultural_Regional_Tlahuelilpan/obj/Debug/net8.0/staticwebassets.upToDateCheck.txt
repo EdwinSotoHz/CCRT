@@ -4,6 +4,7 @@ wwwroot\css\views\dashboard.css
 wwwroot\css\views\groups\groups.css
 wwwroot\css\views\groups\groups-create-edit.css
 wwwroot\css\views\groups\groups-delete.css
+wwwroot\css\views\students\graduates.css
 wwwroot\css\views\students\student-details.css
 wwwroot\css\views\students\students.css
 wwwroot\css\views\students\students-add-to-group.css
@@ -78,6 +79,7 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\src\img\ARTES_VISUALES.jpg
+wwwroot\src\img\ballet.jpg
 wwwroot\src\img\canto.jpg
 wwwroot\src\img\exploracion.jpg
 wwwroot\src\img\guitar.jpg

@@ -12,7 +12,7 @@
     <h1 class="dashboard-title">Dashboard de Gestión Educativa</h1>
 
     <div class="cards-grid">
-        <!-- Card 1: Talleres -->
+        <!-- Talleres -->
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title">Talleres</h2>
@@ -26,18 +26,14 @@
                 </div>
             </div>
             <div class="card-value">@Model.TotalTalleres</div>
-            <p class="card-description">Total de talleres disponibles en el sistema</p>
+            <p class="card-description">Administra los talleres disponibles. Crea, edita o elimina talleres.</p>
             <div class="card-actions">
-                <a asp-action="Workshops" asp-controller="Workshops">
-                    <button class="action-btn view-btn">Ver todos los talleres</button>
-                </a>
-                <a asp-action="CreateEditWorkshop" asp-controller="Workshops" asp-route-TallerId="0">
-                    <button class="action-btn add-btn">Agregar Taller</button>
-                </a>
+                <button onclick="location.href='@Url.Action("Workshops", "Workshops")'" class="action-btn view-btn">Ver talleres</button>
+                <button onclick="location.href='@Url.Action("CreateEditWorkshop", "Workshops", new { TallerId = 0 })'" class="action-btn add-btn">Agregar Taller</button>
             </div>
         </div>
 
-        <!-- Card 2: Docentes -->
+        <!-- Docentes -->
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title">Docentes</h2>
@@ -51,18 +47,14 @@
                 </div>
             </div>
             <div class="card-value">@Model.TotalDocentes</div>
-            <p class="card-description">Docentes activos en el sistema educativo</p>
+            <p class="card-description">Gestiona los docentes y sus credenciales de acceso.</p>
             <div class="card-actions">
-                <a asp-action="Teachers" asp-controller="Teachers">
-                    <button class="action-btn view-btn">Ver lista de Profesores</button>
-                </a>
-                <a asp-action="CreateEditTeacherUser" asp-controller="Teachers" asp-route-UsuarioId="0">
-                    <button class="action-btn add-btn">Agregar Profesor</button>
-                </a>
+                <button onclick="location.href='@Url.Action("Teachers", "Teachers")'" class="action-btn view-btn">Ver docentes</button>
+                <button onclick="location.href='@Url.Action("CreateEditTeacherUser", "Teachers", new { UsuarioId = 0 })'" class="action-btn add-btn">Agregar Docente</button>
             </div>
         </div>
 
-        <!-- Card 3: Grupos -->
+        <!-- Grupos -->
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title">Grupos</h2>
@@ -76,18 +68,14 @@
                 </div>
             </div>
             <div class="card-value">@Model.TotalGrupos</div>
-            <p class="card-description">Grupos activos en el sistema educativo</p>
+            <p class="card-description">Administra los grupos de cada taller con sus horarios.</p>
             <div class="card-actions">
-                <a asp-action="Groups" asp-controller="Groups">
-                    <button class="action-btn view-btn">Ver todos los grupos</button>
-                </a>
-                <a asp-action="CreateEditGroup" asp-controller="Groups" asp-route-grupoId="0">
-                    <button class="action-btn add-btn">Agregar Grupo</button>
-                </a>
+                <button onclick="location.href='@Url.Action("Groups", "Groups")'" class="action-btn view-btn">Ver grupos</button>
+                <button onclick="location.href='@Url.Action("CreateEditGroup", "Groups", new { grupoId = 0 })'" class="action-btn add-btn">Agregar Grupo</button>
             </div>
         </div>
 
-        <!-- Card 4: Alumnos -->
+        <!-- Alumnos -->
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title">Alumnos</h2>
@@ -101,14 +89,10 @@
                 </div>
             </div>
             <div class="card-value">@Model.TotalAlumnos</div>
-            <p class="card-description">Estudiantes registrados en el sistema</p>
+            <p class="card-description">Gestiona alumnos, sus expedientes y grupos asignados.</p>
             <div class="card-actions">
-                <a asp-action="Students" asp-controller="Students">
-                    <button class="action-btn view-btn">Ver todos los estudiantes</button>
-                </a>
-                <a asp-action="CreateEditStudent" asp-controller="Students">
-                    <button class="action-btn add-btn">Inscribir Alumno</button>
-                </a>
+                <button onclick="location.href='@Url.Action("Students", "Students")'" class="action-btn view-btn">Ver alumnos</button>
+                <button onclick="location.href='@Url.Action("CreateEditStudent", "Students")'" class="action-btn add-btn">Inscribir Alumno</button>
             </div>
         </div>
     </div>

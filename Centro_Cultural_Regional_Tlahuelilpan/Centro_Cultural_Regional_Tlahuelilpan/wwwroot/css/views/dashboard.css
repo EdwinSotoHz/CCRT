@@ -1,64 +1,63 @@
 :root {
-    /* Colores principales */
-    --color-primary: #2c3e50; /* Color principal (títulos, texto oscuro) */
-    --color-secondary: #34495e; /* Secundario para títulos menores */
-    --color-text-muted: #7f8c8d; /* Texto secundario */
-    /* Fondo general */
+    --color-primary: #2c3e50;
+    --color-secondary: #34495e;
+    --color-text-muted: #7f8c8d;
     --bg-body: #f5f7fa;
     --bg-card: #ffffff;
-    /* Botones */
     --btn-view-bg: #e0f2fe;
     --btn-view-color: #0369a1;
     --btn-view-hover: #bae6fd;
     --btn-add-bg: #dcfce7;
     --btn-add-color: #15803d;
     --btn-add-hover: #bbf7d0;
-    /* Tipografía */
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background: var(--bg-body);
+    padding: 0px 0;
 }
 
 .dashboard-container {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+    max-width: 1400px;
+    padding: 20px;
 }
 
 .dashboard-title {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 20px 0 40px;
     color: var(--color-primary);
+    font-size: 2.2rem;
 }
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .card {
-    min-width: 600px;
     background: var(--bg-card);
     border-radius: 12px;
-    padding: 25px;
+    padding: 30px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
     .card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
 .card-header {
@@ -69,45 +68,46 @@ body {
 }
 
 .card-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--color-secondary);
     font-weight: 600;
 }
 
 .card-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80px;
+    height: 80px;
 }
 
 .card-value {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .card-description {
     color: var(--color-text-muted);
-    margin-bottom: 20px;
-    font-size: 0.95rem;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    flex-grow: 1;
 }
 
 .card-actions {
     display: flex;
     gap: 15px;
+    margin-top: auto;
 }
 
 .action-btn {
-    padding: 8px 15px;
-    border-radius: 6px;
+    padding: 12px 25px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     font-weight: 500;
-    transition: background 0.3s;
-    font-size: 0.9rem;
+    transition: all 0.3s;
+    font-size: 1rem;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .view-btn {
@@ -133,7 +133,12 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .dashboard-container {
-        width: 95%;
+    .card {
+        min-height: 300px;
+        padding: 25px;
+    }
+
+    .action-btn {
+        padding: 10px 15px;
     }
 }

@@ -269,5 +269,30 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
             TempData["Direction"] = "Admin";
             return RedirectToAction("Details", new { id = vm.AlumnoId });
         }
+
+        /**************************** REPORTE *************************/
+        [HttpGet]
+        public IActionResult GraduatesList()
+        {
+            var egresados = _DBContext.ProgresoEstudiantils
+                .Include(p => p.Alumno)
+                .Include(p => p.Grupo)
+                    .ThenInclude(g => g.Taller)
+                .Where(p => p.Estado == "Egresado" && p.Grupo.Estado == "En curso")
+                .Select(p => new GraduatesVM
+                {
+                    Taller = p.Grupo.Taller.NombreTaller,
+                    Grupo = p.Grupo.NombreGrupo,
+                    NombreCompleto = $"{p.Alumno.Nombre} {p.Alumno.ApellidoPaterno} {p.Alumno.ApellidoMaterno}",
+                    Calificacion = p.Calificacion,
+                    Asistencia = p.Asistencia,
+                    Telefono = p.Alumno.NumeroTelefono,
+                    AdultoResponsable = p.Alumno.AdultoResponsable ?? "",
+                    TelefonoResponsable = p.Alumno.TelefonoResponsable ?? ""
+                })
+                .ToList();
+
+            return View(egresados);
+        }
     }
 }

@@ -1,0 +1,60 @@
+﻿@model List<Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels.GraduatesVM>
+@{
+    ViewData["Title"] = "Listado de Alumnos Egresados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/views/students/graduates.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " />
+}
+
+<div class="students-container">
+    <div class="students-header">
+        <h1 class="students-title">Alumnos Egresados</h1>
+        <a class="btn-back" asp-action="Students" asp-controller="Students">
+            <i class="fas fa-arrow-left"></i> Regresar
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="no-students">
+            <i class="fas fa-user-graduate"></i> No hay alumnos egresados registrados.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>Taller</th>
+                        <th>Grupo</th>
+                        <th>Nombre Completo</th>
+                        <th>Calificación</th>
+                        <th>Asistencia (%)</th>
+                        <th>Teléfono</th>
+                        <th>Adulto Responsable</th>
+                        <th>Teléfono Responsable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="student-row">
+                            <td>@item.Taller</td>
+                            <td>@item.Grupo</td>
+                            <td>@item.NombreCompleto</td>
+                            <td>@(item.Calificacion.HasValue ? item.Calificacion.Value.ToString("F2") : "-")</td>
+                            <td>@(item.Asistencia.HasValue ? item.Asistencia.Value.ToString("F2") : "-")</td>
+                            <td>@item.Telefono</td>
+                            <td>@(string.IsNullOrEmpty(item.AdultoResponsable) ? "-" : item.AdultoResponsable)</td>
+                            <td>@(string.IsNullOrEmpty(item.TelefonoResponsable) ? "-" : item.TelefonoResponsable)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

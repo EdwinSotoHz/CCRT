@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\views\\groups\\groups.css"
     },
     {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\graduates.css",
+      "PackagePath": "staticwebassets\\css\\views\\students\\graduates.css"
+    },
+    {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\css\\views\\students\\student-details.css",
       "PackagePath": "staticwebassets\\css\\views\\students\\student-details.css"
     },
@@ -327,6 +331,10 @@
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\YOGA.jpg",
       "PackagePath": "staticwebassets\\src\\img\\YOGA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\ballet.jpg",
+      "PackagePath": "staticwebassets\\src\\img\\ballet.jpg"
     },
     {
       "Id": "C:\\Users\\edwin\\Documents\\ASP\\CCRT\\Centro_Cultural_Regional_Tlahuelilpan\\Centro_Cultural_Regional_Tlahuelilpan\\wwwroot\\src\\img\\canto.jpg",

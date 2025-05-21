@@ -32,8 +32,14 @@ public partial class CentroCulturalRegionalTlahuelilpanContext : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=LAPTOP-E69PLGON; Initial Catalog=DBASE; user id=sa; pwd=soenezg15; DataBase=Centro_Cultural_Regional_Tlahuelilpan; TrustServerCertificate=true");
+    {
+        // La configuración ahora se hace desde Program.cs
+        if (!optionsBuilder.IsConfigured)
+        {
+            // Esto es opcional, solo para casos donde el contexto se crea sin inyección de dependencias
+            // Pero con tu configuración actual en Program.cs, no debería ser necesario
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
