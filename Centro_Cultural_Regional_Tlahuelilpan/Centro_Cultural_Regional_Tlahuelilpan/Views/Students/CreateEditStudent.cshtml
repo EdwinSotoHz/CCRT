@@ -56,6 +56,12 @@
                     <input type="hidden" asp-for="ReciboPago" id="ReciboPagoHidden" />
                 </div>
                 <div class="form-check">
+                    <input type="checkbox" id="BecadoCheckbox"
+                    @(Model.Becado ? "checked" : "") />
+                    <label for="BecadoCheckbox" class="form-check-label">¿Es becado?</label>
+                    <input type="hidden" asp-for="Becado" id="BecadoHidden" />
+                </div>
+                <div class="form-check">
                     <input type="checkbox" id="FotografiasCheckbox"
                     @(Model.Fotografias ? "checked" : "") />
                     <label for="FotografiasCheckbox" class="form-check-label">Fotografías</label>
@@ -142,6 +148,7 @@
             setupCheckbox("IneCheckbox", "IneHidden");
             setupCheckbox("CertificadoMedicoCheckbox", "CertificadoMedicoHidden");
             setupCheckbox("ReciboPagoCheckbox", "ReciboPagoHidden");
+            setupCheckbox("BecadoCheckbox", "BecadoHidden");
             setupCheckbox("FotografiasCheckbox", "FotografiasHidden");
             setupCheckbox("DocumentosCompletosCheckbox", "DocumentosCompletosHidden");
         });

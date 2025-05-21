@@ -133,6 +133,12 @@
                     </span>
                 </div>
                 <div class="expediente-item">
+                    <span class="expediente-label">Becado:</span>
+                    <span class="@(Model.Expediente?.Becado == true ? "check-yes" : "check-no")">
+                        @(Model.Expediente?.Becado == true ? "Sí" : "No")
+                    </span>
+                </div>
+                <div class="expediente-item">
                     <span class="expediente-label">Fotografías:</span>
                     <span class="@(Model.Expediente?.Fotografias == true ? "check-yes" : "check-no")">
                         @(Model.Expediente?.Fotografias == true ? "Sí" : "No")

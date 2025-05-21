@@ -75,6 +75,7 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
                 vm.ReciboPago = vm.Expediente.ReciboPago ?? false;
                 vm.Fotografias = vm.Expediente.Fotografias ?? false;
                 vm.DocumentosCompletos = vm.Expediente.DocumentosCompletos ?? false;
+                vm.Becado = vm.Expediente.Becado ?? false;
             }
 
             return View(vm);
@@ -101,7 +102,8 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
                     CertificadoMedico = vm.CertificadoMedico,
                     ReciboPago = vm.ReciboPago,
                     Fotografias = vm.Fotografias,
-                    DocumentosCompletos = vm.DocumentosCompletos
+                    DocumentosCompletos = vm.DocumentosCompletos,
+                    Becado = vm.Becado
                 };
 
                 _DBContext.Expedientes.Add(expediente);
@@ -126,6 +128,7 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
                     existingExpediente.ReciboPago = vm.ReciboPago;
                     existingExpediente.Fotografias = vm.Fotografias;
                     existingExpediente.DocumentosCompletos = vm.DocumentosCompletos;
+                    existingExpediente.Becado = vm.Becado;
 
                     _DBContext.Expedientes.Update(existingExpediente);
                 }

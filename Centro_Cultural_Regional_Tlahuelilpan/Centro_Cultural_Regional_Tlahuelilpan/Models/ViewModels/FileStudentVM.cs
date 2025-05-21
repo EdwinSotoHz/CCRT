@@ -6,8 +6,6 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels
     {
         public Alumno Alumno { get; set; } = new();
         public Expediente Expediente { get; set; } = new();
-
-        // Campos booleanos del expediente (opcional)
         public bool ActaNacimiento { get; set; }
         public bool Curp { get; set; }
         public bool ComprobanteDomicilio { get; set; }
@@ -16,5 +14,6 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels
         public bool ReciboPago { get; set; }
         public bool Fotografias { get; set; }
         public bool DocumentosCompletos { get; set; }
+        public bool Becado { get; set; }
     }
 }
