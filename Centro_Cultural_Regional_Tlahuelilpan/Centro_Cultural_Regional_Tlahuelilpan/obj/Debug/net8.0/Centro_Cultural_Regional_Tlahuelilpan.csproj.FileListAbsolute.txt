@@ -686,3 +686,10 @@ C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_C
 C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\obj\Debug\net8.0\Centro_Cultural_Regional_Tlahuelilpan.pdb
 C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\obj\Debug\net8.0\Centro_Cultural_Regional_Tlahuelilpan.genruntimeconfig.cache
 C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\obj\Debug\net8.0\ref\Centro_Cultural_Regional_Tlahuelilpan.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\edwin\Documents\ASP\CCRT\Centro_Cultural_Regional_Tlahuelilpan\Centro_Cultural_Regional_Tlahuelilpan\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll

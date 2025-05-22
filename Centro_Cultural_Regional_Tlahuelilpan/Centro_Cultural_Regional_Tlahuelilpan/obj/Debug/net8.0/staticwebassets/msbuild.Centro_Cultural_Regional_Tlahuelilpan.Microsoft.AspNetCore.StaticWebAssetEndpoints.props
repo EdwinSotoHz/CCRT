@@ -87,14 +87,14 @@
     <StaticWebAssetEndpoint Include="_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/graduates.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\graduates.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KL7Wf9Qm09bTsaFcVtsE4x4hamQy9GTBYbtGbF/GP9Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1934"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KL7Wf9Qm09bTsaFcVtsE4x4hamQy9GTBYbtGbF/GP9Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 21 May 2025 22:05:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5oj6GMDC2qeMmjfQZyN0HkpasTBiRB4hgrdBvO60G6I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2368"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225oj6GMDC2qeMmjfQZyN0HkpasTBiRB4hgrdBvO60G6I=\u0022"},{"Name":"Last-Modified","Value":"Thu, 22 May 2025 00:07:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/graduates.kltwk4opdn.css">
+    <StaticWebAssetEndpoint Include="_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/graduates.mdv1i8r071.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\graduates.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kltwk4opdn"},{"Name":"integrity","Value":"sha256-KL7Wf9Qm09bTsaFcVtsE4x4hamQy9GTBYbtGbF/GP9Y="},{"Name":"label","Value":"_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/graduates.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1934"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KL7Wf9Qm09bTsaFcVtsE4x4hamQy9GTBYbtGbF/GP9Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 21 May 2025 22:05:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mdv1i8r071"},{"Name":"integrity","Value":"sha256-5oj6GMDC2qeMmjfQZyN0HkpasTBiRB4hgrdBvO60G6I="},{"Name":"label","Value":"_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/graduates.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2368"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225oj6GMDC2qeMmjfQZyN0HkpasTBiRB4hgrdBvO60G6I=\u0022"},{"Name":"Last-Modified","Value":"Thu, 22 May 2025 00:07:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Centro_Cultural_Regional_Tlahuelilpan/css/views/students/student-details.11m2rjb1iq.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\views\students\student-details.css'))</AssetFile>

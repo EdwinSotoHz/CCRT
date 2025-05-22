@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Centro_Cultural_Regional_Tlahuelilpan.Models.DBCRUDCORE;
 using Centro_Cultural_Regional_Tlahuelilpan.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Centro_Cultural_Regional_Tlahuelilpan.Models.Pdf;
 
 namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
 {
@@ -297,5 +298,30 @@ namespace Centro_Cultural_Regional_Tlahuelilpan.Controllers
 
             return View(egresados);
         }
+
+        [HttpGet]
+        public IActionResult DownloadGraduatesPdf()
+        {
+            var egresados = _DBContext.ProgresoEstudiantils
+                .Include(p => p.Alumno)
+                .Include(p => p.Grupo)
+                    .ThenInclude(g => g.Taller)
+                .Where(p => p.Estado == "Egresado" && p.Grupo.Estado == "En curso")
+                .Select(p => new GraduatesVM
+                {
+                    Taller = p.Grupo.Taller.NombreTaller,
+                    Grupo = p.Grupo.NombreGrupo,
+                    NombreCompleto = $"{p.Alumno.Nombre} {p.Alumno.ApellidoPaterno} {p.Alumno.ApellidoMaterno}",
+                    Calificacion = p.Calificacion,
+                    Asistencia = p.Asistencia
+                })
+                .ToList();
+
+            var pdfGenerator = new GraduatePdfGenerator(egresados);
+            byte[] pdfBytes = pdfGenerator.GeneratePdf();
+
+            return File(pdfBytes, "application/pdf", $"Acuse_Egresados_{DateTime.Now:yyyy-MM-dd}.pdf");
+        }
+
     }
 }

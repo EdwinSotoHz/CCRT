@@ -15,6 +15,9 @@
         <a class="btn-back" asp-action="Students" asp-controller="Students">
             <i class="fas fa-arrow-left"></i> Regresar
         </a>
+        <a asp-action="DownloadGraduatesPdf" asp-controller="Students" class="btn-download">
+            <i class="fas fa-file-pdf"></i> Descargar Acuse
+        </a>
     </div>
 
     @if (!Model.Any())
